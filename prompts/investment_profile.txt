@@ -1,0 +1,133 @@
+# Investment Profile
+
+## Strategy
+Long-term growth investing (3-12 month holds)
+
+Focus on high-quality technology companies with strong fundamentals,
+competitive moats, and exposure to secular tailwinds (AI, cloud, digital transformation).
+
+## Target Sectors
+Preferred sectors: {{SECTORS}}
+
+Market cap focus: {{MARKET_CAP}}
+
+## Investment Criteria
+
+### Must Have
+- Market cap >$1B (prefer >$10B for liquidity)
+- Positive revenue growth
+- Earnings date within next {{DAYS_AHEAD}} days
+- Trading volume >500K shares/day (avoid illiquid stocks)
+
+### Strongly Prefer
+- Gross margins >60% (or sustainably high for sector)
+- Free cash flow positive
+- ROIC >15%
+- Debt-to-equity <1.0
+- Clear competitive moat (network effects, switching costs, brand, etc.)
+- Management with skin in the game (insider ownership)
+
+## Research Priorities
+
+### 1. Fundamental Strength (Most Important)
+- Revenue growth sustainability (is growth accelerating, stable, or decelerating?)
+- Margin health (expanding or sustainably high)
+- Cash generation (FCF margin, ROIC)
+- Balance sheet quality (low debt, strong cash position)
+
+### 2. Competitive Moat
+- Pricing power (can they raise prices without losing customers?)
+- Switching costs (how hard is it for customers to leave?)
+- Network effects (does value increase with more users?)
+- Market share and position
+
+### 3. Growth Durability
+- TAM expansion (total addressable market growing?)
+- Product/service differentiation
+- Competitive threats (who could disrupt them?)
+- Management track record
+
+### 4. Secular Tailwinds
+- AI/ML infrastructure buildout
+- Cloud adoption and migration
+- Digital transformation trends
+- Enterprise software consolidation
+
+### 5. Valuation
+- PEG ratio (P/E to growth rate ratio)
+- Does growth justify premium multiples?
+- Relative valuation vs sector peers
+
+## Scoring Approach
+
+Target score: {{MIN_SCORE}}+ for inclusion in catalog
+
+### High Score (90+)
+- Exceptional fundamentals (>30% revenue growth, >70% margins, high ROIC)
+- Wide moat with clear pricing power
+- Large TAM expansion opportunity
+- Reasonable valuation for growth (PEG <2.0)
+- Positive analyst sentiment and/or insider buying
+
+### Medium-High Score (80-89)
+- Strong fundamentals (15-30% revenue growth, >60% margins)
+- Narrow to moderate moat
+- Growing market with competitive position
+- Growth justifies valuation
+- Mixed sentiment
+
+### Medium Score (75-79)
+- Decent fundamentals (10-15% revenue growth, stable margins)
+- Some competitive advantages
+- Valuation concerns or execution risks
+- Worth monitoring
+
+### Skip (<75)
+- Declining revenue or negative growth
+- Shrinking margins
+- No clear moat or differentiation
+- Overvalued relative to growth
+- Significant red flags (accounting issues, governance concerns)
+
+## Investment Thesis Template
+
+For each stock, draft a concise thesis (2-3 sentences) that answers:
+1. Why are the fundamentals strong?
+2. What secular trend benefits this company?
+3. What competitive advantage is durable over 3-12 months?
+
+Example:
+"NVIDIA dominates the datacenter GPU market with 90%+ share and significant
+switching costs from CUDA ecosystem. Positioned to benefit from multi-year AI
+infrastructure buildout with strong pricing power. Blackwell architecture
+extends margin and performance leadership through 2026."
+
+## Risk Assessment
+
+Always identify 3-5 specific risks:
+- Competitive threats (new entrants, alternatives)
+- Valuation concerns (high multiples, expectations)
+- Execution risks (product delays, customer concentration)
+- Macro headwinds (spending cuts, recession)
+- Regulatory/political risks
+
+## Data Sources to Use
+
+Public sources only (no API keys required):
+- Yahoo Finance: Stock prices, analyst ratings, fundamentals
+- Nasdaq.com: Earnings calendar, market data
+- Earnings Whispers: Consensus estimates, earnings dates
+- SEC EDGAR: Insider trading (Form 4), 10-Q/10-K filings
+- OpenInsider: Aggregated insider trading
+- Google News: Recent headlines and sentiment
+- TechCrunch, Bloomberg: Product launches, partnerships
+- Company investor relations pages: Earnings dates, presentations
+
+## Important Guidelines
+
+1. Always verify earnings dates from multiple sources (errors are common)
+2. Check for duplicate tickers before adding new stocks
+3. Focus on quality over quantity
+4. Use most recent data available (check dates)
+5. Be objective - note both positives and negatives
+6. Cite sources when possible (include URLs)

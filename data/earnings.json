@@ -1,0 +1,2390 @@
+[
+  {
+    "id": "stock-001",
+    "ticker": "AMZN",
+    "company": "Amazon.com Inc.",
+    "sector": "AWS Ecosystem / Cloud Infrastructure",
+    "market_cap": "$2.4T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-05",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 50,
+    "found_date": "2025-12-17",
+
+    "match_score": 92,
+    "price_current": "$223.34",
+    "price_52w_high": "$242.52",
+    "price_52w_low": "$151.61",
+
+    "investment_thesis": "Amazon is the dominant cloud infrastructure provider with AWS commanding 29% market share and $200B in backlog. Positioned to benefit from multi-year enterprise AI adoption with 150% QoQ growth in custom chip business (Trainium). Advertising revenue growing 22% YoY provides high-margin diversification while retail operations deliver improving profitability.",
+
+    "catalysts": [
+      "AWS revenue growth re-accelerating to 20%+ driven by AI workloads",
+      "Project Rainier data center launch with Anthropic partnership",
+      "Custom silicon (Trainium, Graviton) driving margin expansion",
+      "Advertising revenue hitting $70B+ annually at high margins",
+      "International segment approaching profitability"
+    ],
+
+    "risks": [
+      "Azure and Google Cloud growing faster (40% and 34% respectively)",
+      "Heavy CapEx commitment ($125B in 2025, increasing in 2026)",
+      "FTC settlement and regulatory scrutiny on marketplace practices",
+      "Valuation premium requires sustained 20%+ AWS growth",
+      "Labor cost inflation and unionization pressures"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+12%",
+      "gross_margin": "49.6%",
+      "fcf_margin": "12%",
+      "roic": "12.95%",
+      "debt_to_equity": "0.4",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+20% (AWS)",
+      "margin_expansion": "+2.5% operating margin expansion YoY",
+      "tam_expansion": "Cloud TAM growing 20%+ CAGR, advertising TAM expanding"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 45,
+      "hold_ratings": 5,
+      "sell_ratings": 0,
+      "average_price_target": "$296",
+      "high_target": "$340",
+      "low_target": "$230"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 8,
+      "net_shares_change": "-$2.1B (scheduled 10b5-1 plans)",
+      "notable_transactions": [
+        "CEO Andy Jassy routine scheduled sales"
+      ],
+      "insider_sentiment": "neutral (scheduled sales)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 45.2,
+      "forward_pe": 32.5,
+      "peg_ratio": 1.8,
+      "price_to_sales": 3.2,
+      "ev_to_ebitda": 18.5,
+      "valuation_vs_sector": "premium vs cloud peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 55,
+      "macd": "neutral",
+      "moving_avg_50d": "$218",
+      "moving_avg_200d": "$195",
+      "trend": "uptrend",
+      "support_level": "$210",
+      "resistance_level": "$242"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.97",
+      "consensus_revenue": "$211.2B",
+      "earnings_surprise_history": ["+8%", "+12%", "+15%", "+10%"],
+      "beat_streak": 4,
+      "whisper_number": "$2.00-$2.05"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-15",
+        "headline": "AWS Opens $11B Project Rainier AI Data Center with Anthropic",
+        "source": "CNBC",
+        "sentiment": "positive",
+        "summary": "Largest AI training facility designed for Claude models"
+      },
+      {
+        "date": "2025-12-10",
+        "headline": "Amazon Advertising Revenue Surges 22% to $17.6B in Q3",
+        "source": "Reuters",
+        "sentiment": "positive",
+        "summary": "High-margin advertising business continues rapid growth"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/AMZN",
+      "https://www.nasdaq.com/market-activity/stocks/amzn",
+      "https://www.marketbeat.com/stocks/NASDAQ/AMZN/earnings/",
+      "https://www.cnbc.com/2025/10/30/amazon-amzn-q3-earnings-report-2025.html"
+    ],
+
+    "status": "priority",
+    "tags": ["aws", "cloud", "ai", "advertising", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-002",
+    "ticker": "MSFT",
+    "company": "Microsoft Corporation",
+    "sector": "AWS Ecosystem / Cloud Infrastructure",
+    "market_cap": "$3.5T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-04",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 49,
+    "found_date": "2025-12-17",
+
+    "match_score": 94,
+    "price_current": "$476.31",
+    "price_52w_high": "$512.00",
+    "price_52w_low": "$385.58",
+
+    "investment_thesis": "Microsoft is the enterprise AI platform leader with Azure growing 33% (16 points from AI) and deep OpenAI integration across products. Copilot adoption driving incremental revenue across Office 365 and GitHub with 51% growth in commercial RPO. Dominant position in enterprise software creates massive switching costs and cross-selling opportunities.",
+
+    "catalysts": [
+      "Azure AI services growing 100%+ YoY with capacity constraints easing",
+      "Copilot monetization ramping across enterprise products",
+      "OpenAI partnership deepening with exclusive cloud rights",
+      "Gaming and LinkedIn adding diversified revenue streams",
+      "Commercial bookings grew 111% YoY signaling future revenue"
+    ],
+
+    "risks": [
+      "High AI infrastructure CapEx may pressure near-term margins",
+      "OpenAI partnership has significant cost commitments",
+      "Antitrust scrutiny on cloud bundling practices",
+      "Competition from Google Gemini and AWS Bedrock",
+      "Valuation at 12x sales requires sustained growth"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+13%",
+      "gross_margin": "69%",
+      "fcf_margin": "35%",
+      "roic": "28%",
+      "debt_to_equity": "0.35",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+33% (Azure)",
+      "margin_expansion": "Cloud gross margin at 69%",
+      "tam_expansion": "Enterprise AI TAM expanding 40%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 77,
+      "hold_ratings": 3,
+      "sell_ratings": 0,
+      "average_price_target": "$628",
+      "high_target": "$700",
+      "low_target": "$490"
+    },
+
+    "insider_activity": {
+      "recent_buys": 2,
+      "recent_sells": 15,
+      "net_shares_change": "-$1.5B (primarily 10b5-1 plans)",
+      "notable_transactions": [
+        "Satya Nadella scheduled sales under 10b5-1 plan"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 35.5,
+      "forward_pe": 28.2,
+      "peg_ratio": 2.1,
+      "price_to_sales": 12.5,
+      "ev_to_ebitda": 24.5,
+      "valuation_vs_sector": "premium vs software peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 52,
+      "macd": "bullish",
+      "moving_avg_50d": "$465",
+      "moving_avg_200d": "$430",
+      "trend": "uptrend",
+      "support_level": "$460",
+      "resistance_level": "$512"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$3.58",
+      "consensus_revenue": "$80.24B",
+      "earnings_surprise_history": ["+5%", "+8%", "+6%", "+4%"],
+      "beat_streak": 4,
+      "whisper_number": "$3.60-$3.65"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-12",
+        "headline": "Microsoft Azure Revenue Accelerates to 34-35% Growth Guidance",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "New data center capacity coming online ahead of schedule"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/MSFT",
+      "https://www.nasdaq.com/market-activity/stocks/msft",
+      "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/performance"
+    ],
+
+    "status": "priority",
+    "tags": ["azure", "cloud", "ai", "enterprise", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-003",
+    "ticker": "GOOGL",
+    "company": "Alphabet Inc.",
+    "sector": "AWS Ecosystem / Cloud Infrastructure",
+    "market_cap": "$2.3T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-03",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 48,
+    "found_date": "2025-12-17",
+
+    "match_score": 88,
+    "price_current": "$299.19",
+    "price_52w_high": "$312.00",
+    "price_52w_low": "$150.22",
+
+    "investment_thesis": "Google Cloud is the fastest-growing major cloud platform at 34% YoY with operating margins expanding to 23.7%. Gemini AI models positioning for enterprise adoption while Search maintains 90%+ market share despite AI disruption fears. YouTube and advertising business provides stable cash generation for continued AI investment.",
+
+    "catalysts": [
+      "Google Cloud revenue accelerating with $155B backlog (up 82% YoY)",
+      "Gemini model family gaining enterprise traction",
+      "Cloud operating margin expanded 660bps YoY to 23.7%",
+      "YouTube advertising and subscriptions growing steadily",
+      "Waymo autonomous vehicle potential optionality"
+    ],
+
+    "risks": [
+      "DOJ antitrust case could force Search distribution changes",
+      "AI search may cannibalize traditional search revenue",
+      "Cloud market share (13%) significantly trails AWS and Azure",
+      "Heavy AI CapEx ($91-93B in 2025) pressuring FCF",
+      "Regulatory scrutiny in EU and US on advertising practices"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+16%",
+      "gross_margin": "58%",
+      "fcf_margin": "25%",
+      "roic": "25%",
+      "debt_to_equity": "0.05",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+34% (Google Cloud)",
+      "margin_expansion": "Cloud margin +660bps YoY",
+      "tam_expansion": "Enterprise AI and cloud TAM growing 30%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 29,
+      "hold_ratings": 7,
+      "sell_ratings": 0,
+      "average_price_target": "$324",
+      "high_target": "$380",
+      "low_target": "$250"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 12,
+      "net_shares_change": "-$800M (scheduled sales)",
+      "notable_transactions": [
+        "Sundar Pichai routine 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 24.5,
+      "forward_pe": 19.8,
+      "peg_ratio": 1.2,
+      "price_to_sales": 6.8,
+      "ev_to_ebitda": 15.2,
+      "valuation_vs_sector": "discount vs MSFT/AMZN",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 62,
+      "macd": "bullish",
+      "moving_avg_50d": "$285",
+      "moving_avg_200d": "$260",
+      "trend": "uptrend",
+      "support_level": "$280",
+      "resistance_level": "$312"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$2.58",
+      "consensus_revenue": "$111.0B",
+      "earnings_surprise_history": ["+25%", "+18%", "+12%", "+15%"],
+      "beat_streak": 4,
+      "whisper_number": "$2.65-$2.70"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-10",
+        "headline": "Alphabet Hits $100B Quarterly Revenue Milestone for First Time",
+        "source": "CNBC",
+        "sentiment": "positive",
+        "summary": "Broad-based AI-driven growth across all segments"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/GOOGL",
+      "https://www.nasdaq.com/market-activity/stocks/googl",
+      "https://www.cnbc.com/2025/10/29/alphabet-google-q3-earnings.html"
+    ],
+
+    "status": "watchlist",
+    "tags": ["cloud", "ai", "advertising", "search", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-004",
+    "ticker": "NVDA",
+    "company": "NVIDIA Corporation",
+    "sector": "AI/ML Infrastructure",
+    "market_cap": "$4.3T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-25",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 70,
+    "found_date": "2025-12-17",
+
+    "match_score": 91,
+    "price_current": "$173.66",
+    "price_52w_high": "$195.00",
+    "price_52w_low": "$86.62",
+
+    "investment_thesis": "NVIDIA dominates the datacenter GPU market with 90%+ share and deep CUDA ecosystem lock-in creating massive switching costs. Blackwell architecture extends performance leadership while gross margins stabilize in mid-70s. All major cloud providers (AWS, Azure, GCP) remain heavily dependent on NVIDIA GPUs for AI training and inference.",
+
+    "catalysts": [
+      "Blackwell GPU production ramp driving revenue acceleration",
+      "Datacenter revenue growing 100%+ annually",
+      "Cloud provider AI CapEx expansion continues through 2026",
+      "Enterprise AI adoption still in early innings",
+      "Networking (Spectrum-X) and software (CUDA) diversification"
+    ],
+
+    "risks": [
+      "China export restrictions limiting TAM (~10-15% of revenue)",
+      "AMD MI300X gaining share in inference workloads",
+      "Custom chips (AWS Trainium, Google TPU) reducing GPU dependence",
+      "Valuation extremely elevated at 50x+ P/E",
+      "Supply chain concentration (TSMC CoWoS packaging)"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+94%",
+      "gross_margin": "74.6%",
+      "fcf_margin": "50%",
+      "roic": "85%",
+      "debt_to_equity": "0.18",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "dominant",
+      "cloud_revenue_growth": "N/A - GPU supplier to clouds",
+      "margin_expansion": "Stabilizing in mid-70s as Blackwell ramps",
+      "tam_expansion": "Datacenter GPU TAM growing 40%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 103,
+      "hold_ratings": 1,
+      "sell_ratings": 0,
+      "average_price_target": "$259",
+      "high_target": "$352",
+      "low_target": "$165"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 18,
+      "net_shares_change": "-$3.5B (last 90 days)",
+      "notable_transactions": [
+        "Jensen Huang sold $200M under 10b5-1 plan"
+      ],
+      "insider_sentiment": "neutral (heavy scheduled sales)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 52.5,
+      "forward_pe": 35.2,
+      "peg_ratio": 0.55,
+      "price_to_sales": 28.5,
+      "ev_to_ebitda": 42.5,
+      "valuation_vs_sector": "massive premium vs semis",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 48,
+      "macd": "neutral",
+      "moving_avg_50d": "$178",
+      "moving_avg_200d": "$145",
+      "trend": "consolidation",
+      "support_level": "$165",
+      "resistance_level": "$195"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.92",
+      "consensus_revenue": "$42.5B",
+      "earnings_surprise_history": ["+18%", "+14%", "+22%", "+19%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.95-$1.00"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-14",
+        "headline": "NVIDIA Blackwell GPUs Seeing Strong Demand from Cloud Providers",
+        "source": "TechCrunch",
+        "sentiment": "positive",
+        "summary": "Microsoft, Google, Amazon expanding Blackwell orders"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/NVDA",
+      "https://www.nasdaq.com/market-activity/stocks/nvda",
+      "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026"
+    ],
+
+    "status": "priority",
+    "tags": ["ai", "datacenter", "gpu", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-005",
+    "ticker": "SNOW",
+    "company": "Snowflake Inc.",
+    "sector": "AWS Ecosystem / Data Cloud",
+    "market_cap": "$82B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-03-04",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 77,
+    "found_date": "2025-12-17",
+
+    "match_score": 83,
+    "price_current": "$221.50",
+    "price_52w_high": "$245.00",
+    "price_52w_low": "$107.13",
+
+    "investment_thesis": "Snowflake is the leading cloud data platform enabling enterprises to unify and analyze data across AWS, Azure, and GCP. 29% product revenue growth driven by consumption model as enterprises consolidate data for AI/ML workloads. Anthropic partnership for Claude integration and $2B AWS Marketplace milestone demonstrate ecosystem stickiness.",
+
+    "catalysts": [
+      "Product revenue growth reaccelerating to 29% YoY",
+      "Net revenue retention at 125% shows strong expansion",
+      "Anthropic/Claude AI integration driving new workloads",
+      "688 customers with >$1M product revenue (up 29% YoY)",
+      "Cortex AI and Snowflake Intelligence product launches"
+    ],
+
+    "risks": [
+      "Consumption model creates revenue volatility",
+      "Databricks competition intensifying in AI/ML workloads",
+      "Operating margin guidance softer than expected (7% in Q4)",
+      "Heavy insider selling creating overhang",
+      "Valuation at 20x revenue requires sustained 25%+ growth"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+29%",
+      "gross_margin": "73%",
+      "fcf_margin": "25%",
+      "roic": "N/A (not yet GAAP profitable)",
+      "debt_to_equity": "0.15",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+29% product revenue",
+      "margin_expansion": "Operating margin expanding 460bps YoY",
+      "tam_expansion": "Data cloud TAM growing 25%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 31,
+      "hold_ratings": 2,
+      "sell_ratings": 0,
+      "average_price_target": "$289",
+      "high_target": "$325",
+      "low_target": "$185"
+    },
+
+    "insider_activity": {
+      "recent_buys": 1,
+      "recent_sells": 25,
+      "net_shares_change": "-$500M (last 90 days)",
+      "notable_transactions": [
+        "Multiple executives selling under 10b5-1 plans"
+      ],
+      "insider_sentiment": "negative (heavy selling)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A (GAAP loss)",
+      "forward_pe": 85.0,
+      "peg_ratio": 2.9,
+      "price_to_sales": 18.5,
+      "ev_to_ebitda": 120.0,
+      "valuation_vs_sector": "premium vs cloud peers",
+      "growth_justifies_premium": "borderline"
+    },
+
+    "technical_indicators": {
+      "rsi": 55,
+      "macd": "neutral",
+      "moving_avg_50d": "$215",
+      "moving_avg_200d": "$175",
+      "trend": "uptrend",
+      "support_level": "$200",
+      "resistance_level": "$245"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.27",
+      "consensus_revenue": "$1.21B",
+      "earnings_surprise_history": ["+12%", "+15%", "+18%", "+13%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.30"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-03",
+        "headline": "Snowflake Expands Partnership with Anthropic for Claude AI",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "Claude models integrated into Cortex AI platform"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/SNOW",
+      "https://investors.snowflake.com/financials/quarterly-results/default.aspx",
+      "https://www.tipranks.com/stocks/snow/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "data_cloud", "ai", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-006",
+    "ticker": "DDOG",
+    "company": "Datadog Inc.",
+    "sector": "AWS Ecosystem / Observability",
+    "market_cap": "$53B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-12",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 57,
+    "found_date": "2025-12-17",
+
+    "match_score": 86,
+    "price_current": "$152.75",
+    "price_52w_high": "$172.00",
+    "price_52w_low": "$98.50",
+
+    "investment_thesis": "Datadog is the leading cloud observability platform with 28% revenue growth driven by multi-product adoption. Platform stickiness is exceptional with 84% of customers using 2+ products and 31% using 6+ products. AI-native customers now contributing 12% of revenue as companies monitor AI/ML infrastructure and applications.",
+
+    "catalysts": [
+      "AI-native customer revenue growing to 12% of total",
+      "Security suite growing 55%+ YoY",
+      "Platform adoption deepening (84% use 2+ products)",
+      "Digital experience products hit $300M ARR",
+      "Billings growth of 30% outpacing revenue growth"
+    ],
+
+    "risks": [
+      "Customer spending optimization in uncertain macro",
+      "Competition from Splunk (now Cisco), Dynatrace, New Relic",
+      "Usage-based model creates revenue volatility",
+      "Valuation at 12x sales is premium for growth rate",
+      "Net retention declining from peak levels (120% vs 130%)"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+28%",
+      "gross_margin": "82%",
+      "fcf_margin": "24%",
+      "roic": "15%",
+      "debt_to_equity": "0.4",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+28%",
+      "margin_expansion": "Operating margin at 23%",
+      "tam_expansion": "Observability TAM growing 20%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 30,
+      "hold_ratings": 5,
+      "sell_ratings": 0,
+      "average_price_target": "$207",
+      "high_target": "$230",
+      "low_target": "$105"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 8,
+      "net_shares_change": "-$150M (last 90 days)",
+      "notable_transactions": [
+        "CEO Olivier Pomel regular 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 95.0,
+      "forward_pe": 64.0,
+      "peg_ratio": 2.3,
+      "price_to_sales": 12.5,
+      "ev_to_ebitda": 55.0,
+      "valuation_vs_sector": "premium vs observability peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 58,
+      "macd": "bullish",
+      "moving_avg_50d": "$145",
+      "moving_avg_200d": "$128",
+      "trend": "uptrend",
+      "support_level": "$140",
+      "resistance_level": "$172"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.55",
+      "consensus_revenue": "$915M",
+      "earnings_surprise_history": ["+8%", "+12%", "+10%", "+15%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.58"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-05",
+        "headline": "Datadog Q3 Revenue Beats with 28% Growth, Raises Guidance",
+        "source": "TechCrunch",
+        "sentiment": "positive",
+        "summary": "Strong multi-product adoption and AI customer growth"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/DDOG",
+      "https://investors.datadoghq.com/news-releases",
+      "https://www.tipranks.com/stocks/ddog/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "observability", "ai", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-007",
+    "ticker": "MDB",
+    "company": "MongoDB Inc.",
+    "sector": "AWS Ecosystem / Database",
+    "market_cap": "$32B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-03-10",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 83,
+    "found_date": "2025-12-17",
+
+    "match_score": 82,
+    "price_current": "$395.00",
+    "price_52w_high": "$510.00",
+    "price_52w_low": "$212.00",
+
+    "investment_thesis": "MongoDB is the leading modern database platform with Atlas cloud revenue growing 30% YoY and representing 75% of total revenue. Well-positioned for AI workloads with vector search capabilities as enterprises modernize from legacy relational databases. Developer mindshare and switching costs create durable competitive advantages.",
+
+    "catalysts": [
+      "Atlas cloud revenue growing 30% YoY",
+      "AI/vector search capabilities driving new use cases",
+      "Free cash flow expanding significantly ($140M vs $35M prior year)",
+      "Enterprise customer additions accelerating",
+      "Multi-cloud deployment flexibility vs single-cloud alternatives"
+    ],
+
+    "risks": [
+      "Revenue growth decelerating (19% vs 30%+ historically)",
+      "Competition from AWS DocumentDB, Azure CosmosDB",
+      "Valuation stretched at 13x revenue for growth rate",
+      "Open source alternatives (PostgreSQL) gaining traction",
+      "Customer concentration in top accounts"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+19%",
+      "gross_margin": "77%",
+      "fcf_margin": "22%",
+      "roic": "12%",
+      "debt_to_equity": "0.25",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+30% (Atlas)",
+      "margin_expansion": "Non-GAAP operating margin at 20%",
+      "tam_expansion": "Database TAM growing 15%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 25,
+      "hold_ratings": 5,
+      "sell_ratings": 1,
+      "average_price_target": "$420",
+      "high_target": "$500",
+      "low_target": "$280"
+    },
+
+    "insider_activity": {
+      "recent_buys": 2,
+      "recent_sells": 12,
+      "net_shares_change": "-$100M (last 90 days)",
+      "notable_transactions": [
+        "CEO Dev Ittycheria mixed activity"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 72.0,
+      "peg_ratio": 3.8,
+      "price_to_sales": 13.2,
+      "ev_to_ebitda": 85.0,
+      "valuation_vs_sector": "premium vs database peers",
+      "growth_justifies_premium": "borderline"
+    },
+
+    "technical_indicators": {
+      "rsi": 52,
+      "macd": "neutral",
+      "moving_avg_50d": "$380",
+      "moving_avg_200d": "$320",
+      "trend": "consolidation",
+      "support_level": "$350",
+      "resistance_level": "$450"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.05",
+      "consensus_revenue": "$668M",
+      "earnings_surprise_history": ["+15%", "+12%", "+18%", "+20%"],
+      "beat_streak": 4,
+      "whisper_number": "$1.10"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-03",
+        "headline": "MongoDB Beats Q3 Estimates, Raises Full Year Guidance",
+        "source": "CNBC",
+        "sentiment": "positive",
+        "summary": "Atlas growth and AI positioning drive outperformance"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/MDB",
+      "https://investors.mongodb.com/news-events/news-releases",
+      "https://www.nasdaq.com/market-activity/stocks/mdb"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "database", "ai", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-008",
+    "ticker": "CRWD",
+    "company": "CrowdStrike Holdings Inc.",
+    "sector": "AWS Ecosystem / Cybersecurity",
+    "market_cap": "$105B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-03-10",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 83,
+    "found_date": "2025-12-17",
+
+    "match_score": 85,
+    "price_current": "$425.00",
+    "price_52w_high": "$450.00",
+    "price_52w_low": "$220.00",
+
+    "investment_thesis": "CrowdStrike is the leading cloud-native endpoint security platform with 22% revenue growth and record $265M net new ARR despite July incident headwinds. Falcon Flex subscription model accelerating adoption with 200%+ YoY growth to $1.35B ARR. Platform consolidation trend favoring comprehensive security suites over point solutions.",
+
+    "catalysts": [
+      "Net new ARR accelerating to 73% YoY growth",
+      "Falcon Flex ARR at $1.35B (200%+ growth)",
+      "Record operating income of $265M (21% margin)",
+      "Platform adoption driving cross-sell opportunities",
+      "July incident impact fading as customers stay loyal"
+    ],
+
+    "risks": [
+      "July 2025 incident still creating brand concerns",
+      "Competition from SentinelOne, Microsoft Defender",
+      "Valuation at 28x sales is extremely elevated",
+      "GAAP profitability still negative",
+      "Customer consolidation reducing total addressable customers"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+22%",
+      "gross_margin": "78%",
+      "fcf_margin": "24%",
+      "roic": "N/A (GAAP loss)",
+      "debt_to_equity": "0.18",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "stable",
+      "cloud_revenue_growth": "+22%",
+      "margin_expansion": "Operating margin at 21%",
+      "tam_expansion": "Cybersecurity TAM growing 12%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 38,
+      "hold_ratings": 4,
+      "sell_ratings": 0,
+      "average_price_target": "$475",
+      "high_target": "$550",
+      "low_target": "$350"
+    },
+
+    "insider_activity": {
+      "recent_buys": 1,
+      "recent_sells": 15,
+      "net_shares_change": "-$200M (last 90 days)",
+      "notable_transactions": [
+        "CEO George Kurtz routine 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 85.0,
+      "peg_ratio": 3.9,
+      "price_to_sales": 28.8,
+      "ev_to_ebitda": 95.0,
+      "valuation_vs_sector": "premium vs cybersecurity peers",
+      "growth_justifies_premium": "borderline"
+    },
+
+    "technical_indicators": {
+      "rsi": 60,
+      "macd": "bullish",
+      "moving_avg_50d": "$410",
+      "moving_avg_200d": "$350",
+      "trend": "uptrend",
+      "support_level": "$400",
+      "resistance_level": "$450"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.10",
+      "consensus_revenue": "$1.30B",
+      "earnings_surprise_history": ["+10%", "+8%", "+12%", "+15%"],
+      "beat_streak": 4,
+      "whisper_number": "$1.15"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-05",
+        "headline": "CrowdStrike Q3 Shows Strong Recovery with Record ARR",
+        "source": "Reuters",
+        "sentiment": "positive",
+        "summary": "July incident impact fading as customers stay loyal"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/CRWD",
+      "https://ir.crowdstrike.com/news-releases",
+      "https://www.tipranks.com/stocks/crwd/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "cybersecurity", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-009",
+    "ticker": "PANW",
+    "company": "Palo Alto Networks Inc.",
+    "sector": "AWS Ecosystem / Cybersecurity",
+    "market_cap": "$138B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-24",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 69,
+    "found_date": "2025-12-17",
+
+    "match_score": 87,
+    "price_current": "$420.00",
+    "price_52w_high": "$458.00",
+    "price_52w_low": "$262.00",
+
+    "investment_thesis": "Palo Alto Networks is the largest pure-play cybersecurity company with $5B in next-gen security ARR growing 29% YoY. Platformization strategy consolidating security spending as enterprises reduce vendor count. Strong operating margins (30%+) and free cash flow generation (38-39% margin) demonstrate business model leverage.",
+
+    "catalysts": [
+      "Next-gen security ARR at $5.85B (29% YoY growth)",
+      "Platformization driving customer consolidation wins",
+      "Operating margin exceeding 30% for second quarter",
+      "AI-powered security products gaining traction",
+      "Strategic acquisitions expanding TAM (quantum readiness)"
+    ],
+
+    "risks": [
+      "Transition to subscription impacting near-term revenue",
+      "Competition from CrowdStrike in endpoint/cloud security",
+      "Market share pressure in specific segments",
+      "Valuation premium requires continued execution",
+      "Integration risk from multiple acquisitions"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+16%",
+      "gross_margin": "73.4%",
+      "fcf_margin": "38%",
+      "roic": "22%",
+      "debt_to_equity": "0.45",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+29% (NGS ARR)",
+      "margin_expansion": "Operating margin 30%+",
+      "tam_expansion": "Cybersecurity TAM growing 12%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 35,
+      "hold_ratings": 5,
+      "sell_ratings": 0,
+      "average_price_target": "$450",
+      "high_target": "$520",
+      "low_target": "$350"
+    },
+
+    "insider_activity": {
+      "recent_buys": 3,
+      "recent_sells": 10,
+      "net_shares_change": "-$80M (last 90 days)",
+      "notable_transactions": [
+        "CEO Nikesh Arora routine sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 58.0,
+      "forward_pe": 45.0,
+      "peg_ratio": 2.8,
+      "price_to_sales": 13.5,
+      "ev_to_ebitda": 38.0,
+      "valuation_vs_sector": "premium vs cybersecurity peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 55,
+      "macd": "bullish",
+      "moving_avg_50d": "$405",
+      "moving_avg_200d": "$360",
+      "trend": "uptrend",
+      "support_level": "$390",
+      "resistance_level": "$458"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.95",
+      "consensus_revenue": "$2.58B",
+      "earnings_surprise_history": ["+5%", "+8%", "+6%", "+7%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.98"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-11-20",
+        "headline": "Palo Alto Networks Q1 FY26 Beats on Revenue and NGS ARR",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "Platformization strategy driving customer wins"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/PANW",
+      "https://investors.paloaltonetworks.com/news-releases",
+      "https://www.tipranks.com/stocks/panw/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "cybersecurity", "wide_moat", "large_cap"]
+  },
+  {
+    "id": "stock-010",
+    "ticker": "NOW",
+    "company": "ServiceNow Inc.",
+    "sector": "AWS Ecosystem / Enterprise Software",
+    "market_cap": "$220B",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-01-28",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 42,
+    "found_date": "2025-12-17",
+
+    "match_score": 90,
+    "price_current": "$1,085.00",
+    "price_52w_high": "$1,150.00",
+    "price_52w_low": "$680.00",
+
+    "investment_thesis": "ServiceNow is the dominant enterprise workflow automation platform with 21.5% subscription revenue growth and AI products exceeding $500M ACV. Near-100% customer retention and expansion creates highly predictable revenue. AI-powered automation driving operational expense efficiency with operating margin expanding 230bps YoY.",
+
+    "catalysts": [
+      "AI products exceeding $500M ACV with rapid growth",
+      "Operating margin expanding 230bps YoY to 33.5%",
+      "cRPO of $11.35B growing 21% provides revenue visibility",
+      "FCF margin guidance raised to 34% (250bps YoY increase)",
+      "5-for-1 stock split improving accessibility"
+    ],
+
+    "risks": [
+      "Large enterprise spending cautious in uncertain macro",
+      "Competition from Microsoft, Salesforce in workflow automation",
+      "Valuation at 17x revenue is premium for 20% growth",
+      "Customer concentration in Fortune 500",
+      "AI commoditization could reduce differentiation"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+22%",
+      "gross_margin": "83%",
+      "fcf_margin": "34%",
+      "roic": "28%",
+      "debt_to_equity": "0.35",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+21.5%",
+      "margin_expansion": "Operating margin +230bps YoY",
+      "tam_expansion": "Enterprise workflow TAM growing 18%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 42,
+      "hold_ratings": 3,
+      "sell_ratings": 0,
+      "average_price_target": "$1,200",
+      "high_target": "$1,400",
+      "low_target": "$950"
+    },
+
+    "insider_activity": {
+      "recent_buys": 5,
+      "recent_sells": 12,
+      "net_shares_change": "-$50M (last 90 days)",
+      "notable_transactions": [
+        "CEO Bill McDermott buying shares"
+      ],
+      "insider_sentiment": "positive"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 75.0,
+      "forward_pe": 52.0,
+      "peg_ratio": 2.4,
+      "price_to_sales": 17.5,
+      "ev_to_ebitda": 48.0,
+      "valuation_vs_sector": "premium vs enterprise software peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 58,
+      "macd": "bullish",
+      "moving_avg_50d": "$1,050",
+      "moving_avg_200d": "$920",
+      "trend": "uptrend",
+      "support_level": "$1,020",
+      "resistance_level": "$1,150"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$4.82",
+      "consensus_revenue": "$3.43B",
+      "earnings_surprise_history": ["+10%", "+12%", "+13%", "+8%"],
+      "beat_streak": 4,
+      "whisper_number": "$4.90"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-10-24",
+        "headline": "ServiceNow Q3 Beats Estimates, Announces 5-for-1 Stock Split",
+        "source": "CNBC",
+        "sentiment": "positive",
+        "summary": "AI-powered solutions driving record performance"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/NOW",
+      "https://www.servicenow.com/company/investor-relations.html",
+      "https://www.tipranks.com/stocks/now/forecast"
+    ],
+
+    "status": "priority",
+    "tags": ["aws_ecosystem", "enterprise", "ai", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-011",
+    "ticker": "NET",
+    "company": "Cloudflare Inc.",
+    "sector": "AWS Ecosystem / Edge Cloud",
+    "market_cap": "$43B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-05",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 50,
+    "found_date": "2025-12-17",
+
+    "match_score": 81,
+    "price_current": "$128.50",
+    "price_52w_high": "$145.00",
+    "price_52w_low": "$65.00",
+
+    "investment_thesis": "Cloudflare is building the modern internet infrastructure layer with 30.7% revenue growth accelerating for second consecutive quarter. Edge computing and developer platforms differentiating from pure CDN competitors. Workers AI and R2 storage driving new workloads as enterprises deploy AI at the edge.",
+
+    "catalysts": [
+      "Revenue growth reaccelerating to 30.7% YoY",
+      "RPO growing 43% signals strong future revenue",
+      "Workers AI and R2 storage expanding use cases",
+      "Free cash flow margin improving to 13%",
+      "GAAP net loss nearly eliminated"
+    ],
+
+    "risks": [
+      "Gross margin declining (75.3% vs 78.8% prior year)",
+      "Competition from AWS CloudFront, Fastly, Akamai",
+      "Developer platform monetization still early",
+      "Valuation at 20x sales for 30% growth",
+      "CEO share sales creating overhang"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+30.7%",
+      "gross_margin": "75.3%",
+      "fcf_margin": "13%",
+      "roic": "N/A (near breakeven)",
+      "debt_to_equity": "0.65",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+30.7%",
+      "margin_expansion": "Operating margin improving",
+      "tam_expansion": "Edge cloud TAM growing 25%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 22,
+      "hold_ratings": 8,
+      "sell_ratings": 1,
+      "average_price_target": "$145",
+      "high_target": "$180",
+      "low_target": "$95"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 18,
+      "net_shares_change": "-$300M (last 90 days)",
+      "notable_transactions": [
+        "CEO Matthew Prince significant 10b5-1 sales"
+      ],
+      "insider_sentiment": "negative (heavy selling)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 180.0,
+      "peg_ratio": 6.0,
+      "price_to_sales": 20.5,
+      "ev_to_ebitda": 150.0,
+      "valuation_vs_sector": "premium vs CDN/edge peers",
+      "growth_justifies_premium": "borderline"
+    },
+
+    "technical_indicators": {
+      "rsi": 62,
+      "macd": "bullish",
+      "moving_avg_50d": "$120",
+      "moving_avg_200d": "$100",
+      "trend": "uptrend",
+      "support_level": "$115",
+      "resistance_level": "$145"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.18",
+      "consensus_revenue": "$589M",
+      "earnings_surprise_history": ["+20%", "+15%", "+25%", "+18%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.20"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-10-30",
+        "headline": "Cloudflare Q3 Beats with Accelerating 30.7% Revenue Growth",
+        "source": "TechCrunch",
+        "sentiment": "positive",
+        "summary": "Growth reaccelerating as AI workloads increase"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/NET",
+      "https://www.cloudflare.com/press/press-releases/",
+      "https://www.tipranks.com/stocks/net/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "edge_cloud", "ai", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-012",
+    "ticker": "ZS",
+    "company": "Zscaler Inc.",
+    "sector": "AWS Ecosystem / Cybersecurity",
+    "market_cap": "$36B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-19",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 64,
+    "found_date": "2025-12-17",
+
+    "match_score": 84,
+    "price_current": "$235.00",
+    "price_52w_high": "$265.00",
+    "price_52w_low": "$155.00",
+
+    "investment_thesis": "Zscaler is the leading Zero Trust security platform with 26% revenue growth and exceptional free cash flow margin of 52%. AI Security pillar growing 80%+ YoY as enterprises adopt AI-native security. Rule of 78 performance (26% growth + 52% FCF margin) demonstrates best-in-class unit economics for cybersecurity.",
+
+    "catalysts": [
+      "AI Security pillar growing 80%+ YoY exceeding targets",
+      "Zero Trust Everywhere hitting 450 enterprise adoptions early",
+      "Free cash flow margin at 52% (Rule of 78 performance)",
+      "RPO at $5.9B growing 35% YoY",
+      "Red Canary acquisition adding agentic AI capabilities"
+    ],
+
+    "risks": [
+      "Revenue growth decelerating from 30%+ to 26%",
+      "Competition from Palo Alto SASE offerings",
+      "GAAP profitability still negative",
+      "Customer spending optimization in uncertain macro",
+      "Valuation at 11x sales requires sustained growth"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+26%",
+      "gross_margin": "79.9%",
+      "fcf_margin": "52%",
+      "roic": "N/A (GAAP loss)",
+      "debt_to_equity": "0.55",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+26%",
+      "margin_expansion": "Operating margin at 22%",
+      "tam_expansion": "Zero Trust TAM growing 20%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 28,
+      "hold_ratings": 6,
+      "sell_ratings": 0,
+      "average_price_target": "$260",
+      "high_target": "$320",
+      "low_target": "$180"
+    },
+
+    "insider_activity": {
+      "recent_buys": 2,
+      "recent_sells": 8,
+      "net_shares_change": "-$100M (last 90 days)",
+      "notable_transactions": [
+        "CEO Jay Chaudhry mixed activity"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 62.0,
+      "peg_ratio": 2.4,
+      "price_to_sales": 11.0,
+      "ev_to_ebitda": 55.0,
+      "valuation_vs_sector": "inline with cybersecurity peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 54,
+      "macd": "neutral",
+      "moving_avg_50d": "$228",
+      "moving_avg_200d": "$195",
+      "trend": "consolidation",
+      "support_level": "$220",
+      "resistance_level": "$265"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.90",
+      "consensus_revenue": "$798M",
+      "earnings_surprise_history": ["+12%", "+10%", "+15%", "+8%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.95"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-11-25",
+        "headline": "Zscaler Q1 FY26 Beats with 26% Revenue Growth and 52% FCF Margin",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "AI Security growth exceeding targets"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/ZS",
+      "https://ir.zscaler.com/news-releases",
+      "https://www.tipranks.com/stocks/zs/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "cybersecurity", "zero_trust", "high_growth", "large_cap"]
+  },
+  {
+    "id": "stock-013",
+    "ticker": "CSCO",
+    "company": "Cisco Systems Inc.",
+    "sector": "AWS Ecosystem / Networking",
+    "market_cap": "$245B",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-18",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 63,
+    "found_date": "2025-12-17",
+
+    "match_score": 78,
+    "price_current": "$61.50",
+    "price_52w_high": "$64.00",
+    "price_52w_low": "$44.00",
+
+    "investment_thesis": "Cisco is the networking infrastructure leader benefiting from AI data center buildout with 8% revenue growth returning after years of decline. Splunk acquisition adding $4B+ in high-margin software/security revenue. Strong free cash flow generation and 3%+ dividend yield provide downside protection.",
+
+    "catalysts": [
+      "AI infrastructure driving networking equipment demand",
+      "Splunk integration adding recurring security revenue",
+      "Revenue growth positive for first time in years",
+      "Webex and collaboration tools AI upgrades",
+      "Data center switching market leadership"
+    ],
+
+    "risks": [
+      "Legacy hardware facing cloud migration headwinds",
+      "Competition from Arista, Juniper in data center",
+      "Slow revenue growth limits multiple expansion",
+      "Splunk integration execution risk",
+      "Enterprise spending cautious in uncertain macro"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+8%",
+      "gross_margin": "65%",
+      "fcf_margin": "28%",
+      "roic": "15%",
+      "debt_to_equity": "0.25",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "stable",
+      "cloud_revenue_growth": "N/A",
+      "margin_expansion": "Stable margins",
+      "tam_expansion": "Networking TAM growing 8%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 18,
+      "hold_ratings": 12,
+      "sell_ratings": 2,
+      "average_price_target": "$65",
+      "high_target": "$75",
+      "low_target": "$52"
+    },
+
+    "insider_activity": {
+      "recent_buys": 5,
+      "recent_sells": 8,
+      "net_shares_change": "-$20M (last 90 days)",
+      "notable_transactions": [
+        "Mixed executive activity"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 18.5,
+      "forward_pe": 15.2,
+      "peg_ratio": 1.9,
+      "price_to_sales": 4.1,
+      "ev_to_ebitda": 12.5,
+      "valuation_vs_sector": "discount vs tech peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 55,
+      "macd": "neutral",
+      "moving_avg_50d": "$59",
+      "moving_avg_200d": "$52",
+      "trend": "uptrend",
+      "support_level": "$58",
+      "resistance_level": "$64"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.02",
+      "consensus_revenue": "$15.1B",
+      "earnings_surprise_history": ["+5%", "+3%", "+8%", "+6%"],
+      "beat_streak": 4,
+      "whisper_number": "$1.05"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-11-12",
+        "headline": "Cisco Q1 FY26 Posts Record Revenue on AI Infrastructure Demand",
+        "source": "Reuters",
+        "sentiment": "positive",
+        "summary": "AI partnerships and Splunk driving growth"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/CSCO",
+      "https://investor.cisco.com/",
+      "https://www.tipranks.com/stocks/csco/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "networking", "ai_infrastructure", "dividend", "mega_cap"]
+  },
+  {
+    "id": "stock-014",
+    "ticker": "ORCL",
+    "company": "Oracle Corporation",
+    "sector": "AWS Ecosystem / Cloud Infrastructure",
+    "market_cap": "$520B",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-03-16",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 89,
+    "found_date": "2025-12-17",
+
+    "match_score": 82,
+    "price_current": "$185.00",
+    "price_52w_high": "$198.00",
+    "price_52w_low": "$100.00",
+
+    "investment_thesis": "Oracle Cloud Infrastructure is the fastest-growing hyperscaler with 70%+ expected growth in FY26 driven by AI training demand. Strong database franchise provides recurring revenue while OCI gains share from enterprises seeking multi-cloud alternatives to AWS/Azure. Management guiding to $67B+ FY26 revenue vs $65B consensus.",
+
+    "catalysts": [
+      "OCI revenue growing 70%+ annually",
+      "Cloud revenue up 33% to $8B quarterly",
+      "Management guiding above consensus ($67B vs $65B)",
+      "Autonomous Database and AI integrations",
+      "Multi-cloud partnerships with Microsoft and Google"
+    ],
+
+    "risks": [
+      "Legacy database facing cloud migration pressure",
+      "Cloud market share still small vs AWS/Azure/GCP",
+      "Heavy CapEx for data center buildout",
+      "Competition in AI training infrastructure",
+      "Valuation expanded significantly (80%+ YTD gain)"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+13%",
+      "gross_margin": "72%",
+      "fcf_margin": "25%",
+      "roic": "18%",
+      "debt_to_equity": "1.2",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+33% (Cloud), +70% (OCI)",
+      "margin_expansion": "Stable with cloud mix shift",
+      "tam_expansion": "Cloud infrastructure TAM growing 25%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 25,
+      "hold_ratings": 10,
+      "sell_ratings": 2,
+      "average_price_target": "$195",
+      "high_target": "$230",
+      "low_target": "$150"
+    },
+
+    "insider_activity": {
+      "recent_buys": 1,
+      "recent_sells": 15,
+      "net_shares_change": "-$500M (last 90 days)",
+      "notable_transactions": [
+        "Larry Ellison routine 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral (scheduled)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 38.0,
+      "forward_pe": 28.0,
+      "peg_ratio": 2.2,
+      "price_to_sales": 9.8,
+      "ev_to_ebitda": 22.0,
+      "valuation_vs_sector": "premium vs legacy software peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 48,
+      "macd": "neutral",
+      "moving_avg_50d": "$182",
+      "moving_avg_200d": "$155",
+      "trend": "consolidation",
+      "support_level": "$175",
+      "resistance_level": "$198"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.52",
+      "consensus_revenue": "$16.8B",
+      "earnings_surprise_history": ["+5%", "+8%", "+6%", "+4%"],
+      "beat_streak": 4,
+      "whisper_number": "$1.55"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-10",
+        "headline": "Oracle Q2 FY26 Cloud Revenue Jumps 33% on AI Demand",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "OCI growth accelerating with AI training workloads"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/ORCL",
+      "https://investor.oracle.com/",
+      "https://www.tipranks.com/stocks/orcl/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["cloud", "database", "ai_infrastructure", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-015",
+    "ticker": "INTC",
+    "company": "Intel Corporation",
+    "sector": "Semiconductors",
+    "market_cap": "$90B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-01-22",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 36,
+    "found_date": "2025-12-17",
+
+    "match_score": 65,
+    "price_current": "$21.00",
+    "price_52w_high": "$35.00",
+    "price_52w_low": "$18.50",
+
+    "investment_thesis": "Intel is executing a turnaround strategy under new leadership with foundry services gaining potential customers. Significant underperformance creates deep value opportunity if execution improves. However, substantial risks remain with market share losses to AMD and limited AI exposure.",
+
+    "catalysts": [
+      "Foundry services gaining potential customers",
+      "18A process node on track for 2025",
+      "Government CHIPS Act funding support",
+      "New CEO potential for strategic changes",
+      "Deep value at 1x sales if turnaround succeeds"
+    ],
+
+    "risks": [
+      "Continued market share losses to AMD",
+      "AI GPU market dominated by NVIDIA",
+      "Foundry execution risk is substantial",
+      "Cash burn from manufacturing investments",
+      "Management turnover and execution uncertainty"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "-10%",
+      "gross_margin": "36.5%",
+      "fcf_margin": "-15%",
+      "roic": "-5%",
+      "debt_to_equity": "0.45",
+      "moat_strength": "narrow"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "stable",
+      "cloud_revenue_growth": "N/A",
+      "margin_expansion": "Margins contracting",
+      "tam_expansion": "Losing share in growing markets"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "hold",
+      "buy_ratings": 5,
+      "hold_ratings": 25,
+      "sell_ratings": 12,
+      "average_price_target": "$25",
+      "high_target": "$38",
+      "low_target": "$16"
+    },
+
+    "insider_activity": {
+      "recent_buys": 8,
+      "recent_sells": 2,
+      "net_shares_change": "+$15M (last 90 days)",
+      "notable_transactions": [
+        "Board members buying shares"
+      ],
+      "insider_sentiment": "positive"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A (loss)",
+      "forward_pe": 85.0,
+      "peg_ratio": "N/A",
+      "price_to_sales": 1.7,
+      "ev_to_ebitda": 25.0,
+      "valuation_vs_sector": "discount vs semis but challenged",
+      "growth_justifies_premium": false
+    },
+
+    "technical_indicators": {
+      "rsi": 38,
+      "macd": "bearish",
+      "moving_avg_50d": "$23",
+      "moving_avg_200d": "$28",
+      "trend": "downtrend",
+      "support_level": "$18",
+      "resistance_level": "$25"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.08",
+      "consensus_revenue": "$13.3B",
+      "earnings_surprise_history": ["-5%", "+2%", "-8%", "+3%"],
+      "beat_streak": 0,
+      "whisper_number": "$0.05-$0.10"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-02",
+        "headline": "Intel CEO Pat Gelsinger Retires Amid Turnaround Struggles",
+        "source": "WSJ",
+        "sentiment": "negative",
+        "summary": "Board seeking new leadership as turnaround stalls"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/INTC",
+      "https://www.nasdaq.com/market-activity/stocks/intc",
+      "https://www.tipranks.com/stocks/intc/forecast"
+    ],
+
+    "status": "excluded",
+    "tags": ["semiconductors", "turnaround", "value", "high_risk", "large_cap"]
+  },
+  {
+    "id": "stock-016",
+    "ticker": "TSLA",
+    "company": "Tesla Inc.",
+    "sector": "Electric Vehicles / AI",
+    "market_cap": "$1.4T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-01-28",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 42,
+    "found_date": "2025-12-17",
+
+    "match_score": 76,
+    "price_current": "$455.00",
+    "price_52w_high": "$488.00",
+    "price_52w_low": "$138.80",
+
+    "investment_thesis": "Tesla is transitioning from pure EV play to AI and autonomous driving company with FSD and Optimus robot providing massive optionality. Energy storage business growing rapidly while Dojo supercomputer positions for AI training. However, core EV margins under pressure from competition and valuation assumes perfect execution on AI.",
+
+    "catalysts": [
+      "FSD autonomous driving technology advancement",
+      "Optimus humanoid robot development",
+      "Energy storage business growing 100%+ YoY",
+      "Cybertruck production ramp",
+      "Dojo supercomputer for AI training"
+    ],
+
+    "risks": [
+      "EV margins declining from competition",
+      "China demand weakness and local competition",
+      "Valuation assumes AI/robotics success",
+      "CEO distraction with multiple ventures",
+      "Regulatory and political uncertainties"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+8%",
+      "gross_margin": "18%",
+      "fcf_margin": "5%",
+      "roic": "12%",
+      "debt_to_equity": "0.15",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "N/A",
+      "margin_expansion": "Margins under pressure",
+      "tam_expansion": "EV + Autonomy + Robotics TAM massive"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "hold",
+      "buy_ratings": 15,
+      "hold_ratings": 18,
+      "sell_ratings": 10,
+      "average_price_target": "$350",
+      "high_target": "$550",
+      "low_target": "$120"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 5,
+      "net_shares_change": "-$500M (last 90 days)",
+      "notable_transactions": [
+        "Elon Musk periodic sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 145.0,
+      "forward_pe": 95.0,
+      "peg_ratio": 11.0,
+      "price_to_sales": 14.5,
+      "ev_to_ebitda": 75.0,
+      "valuation_vs_sector": "massive premium vs auto peers",
+      "growth_justifies_premium": "speculative"
+    },
+
+    "technical_indicators": {
+      "rsi": 72,
+      "macd": "bullish",
+      "moving_avg_50d": "$380",
+      "moving_avg_200d": "$280",
+      "trend": "strong uptrend",
+      "support_level": "$400",
+      "resistance_level": "$488"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.75",
+      "consensus_revenue": "$28.5B",
+      "earnings_surprise_history": ["+5%", "-8%", "+2%", "+10%"],
+      "beat_streak": 1,
+      "whisper_number": "$0.80"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-10",
+        "headline": "Tesla Stock Surges on FSD v13 Rollout",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "Latest FSD version shows significant improvements"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/TSLA",
+      "https://ir.tesla.com/",
+      "https://www.tipranks.com/stocks/tsla/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["ev", "ai", "autonomy", "robotics", "high_volatility", "mega_cap"]
+  },
+  {
+    "id": "stock-017",
+    "ticker": "META",
+    "company": "Meta Platforms Inc.",
+    "sector": "Social Media / AI",
+    "market_cap": "$1.5T",
+    "market_cap_category": "mega",
+
+    "earnings_date": "2026-02-04",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 49,
+    "found_date": "2025-12-17",
+
+    "match_score": 85,
+    "price_current": "$610.00",
+    "price_52w_high": "$638.00",
+    "price_52w_low": "$414.50",
+
+    "investment_thesis": "Meta is the leader in AI-powered social advertising with Llama open-source models driving enterprise adoption. Reality Labs investments in VR/AR provide long-term optionality while core advertising business generates massive cash flow. AI-enhanced ad targeting driving ROAS improvements for advertisers.",
+
+    "catalysts": [
+      "Llama AI models gaining enterprise adoption",
+      "AI-enhanced ad targeting improving ROAS",
+      "Reels monetization closing gap to TikTok",
+      "WhatsApp business messaging monetization",
+      "Ray-Ban Meta smart glasses traction"
+    ],
+
+    "risks": [
+      "Reality Labs losses of $15B+ annually",
+      "TikTok competition for younger demographics",
+      "Regulatory scrutiny on data privacy",
+      "Heavy AI infrastructure investments",
+      "Apple ATT impact on ad targeting"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+20%",
+      "gross_margin": "82%",
+      "fcf_margin": "30%",
+      "roic": "28%",
+      "debt_to_equity": "0.12",
+      "moat_strength": "wide"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "N/A",
+      "margin_expansion": "Operating margins expanding",
+      "tam_expansion": "Digital advertising TAM growing 12%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 52,
+      "hold_ratings": 5,
+      "sell_ratings": 1,
+      "average_price_target": "$680",
+      "high_target": "$800",
+      "low_target": "$480"
+    },
+
+    "insider_activity": {
+      "recent_buys": 0,
+      "recent_sells": 12,
+      "net_shares_change": "-$1B (last 90 days)",
+      "notable_transactions": [
+        "Mark Zuckerberg routine 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral (scheduled)"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 28.0,
+      "forward_pe": 22.5,
+      "peg_ratio": 1.1,
+      "price_to_sales": 10.5,
+      "ev_to_ebitda": 15.5,
+      "valuation_vs_sector": "reasonable vs FANG peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 58,
+      "macd": "bullish",
+      "moving_avg_50d": "$590",
+      "moving_avg_200d": "$545",
+      "trend": "uptrend",
+      "support_level": "$575",
+      "resistance_level": "$638"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$6.85",
+      "consensus_revenue": "$48.5B",
+      "earnings_surprise_history": ["+10%", "+15%", "+12%", "+8%"],
+      "beat_streak": 4,
+      "whisper_number": "$7.00"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-08",
+        "headline": "Meta Llama 3.2 Drives Enterprise AI Adoption",
+        "source": "TechCrunch",
+        "sentiment": "positive",
+        "summary": "Open-source AI models gaining traction with enterprises"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/META",
+      "https://investor.fb.com/",
+      "https://www.tipranks.com/stocks/meta/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["social_media", "ai", "advertising", "wide_moat", "mega_cap"]
+  },
+  {
+    "id": "stock-018",
+    "ticker": "ESTC",
+    "company": "Elastic N.V.",
+    "sector": "AWS Ecosystem / Search & Observability",
+    "market_cap": "$11B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-26",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 71,
+    "found_date": "2025-12-17",
+
+    "match_score": 77,
+    "price_current": "$108.00",
+    "price_52w_high": "$125.00",
+    "price_52w_low": "$68.00",
+
+    "investment_thesis": "Elastic is the leading search platform with Elasticsearch powering enterprise search and observability. Cloud revenue growing 25% YoY with AI-powered search capabilities driving new use cases. Vector search for AI/RAG applications positions well for GenAI workloads.",
+
+    "catalysts": [
+      "Cloud revenue growing 25% YoY",
+      "AI-powered search and vector search capabilities",
+      "Security and observability product expansion",
+      "Operating margin expanding to 16%",
+      "Enterprise customer growth accelerating"
+    ],
+
+    "risks": [
+      "Revenue growth decelerating to 16%",
+      "Competition from Datadog, Splunk in observability",
+      "Open source alternative (OpenSearch) creating pressure",
+      "Valuation at 7x sales for mid-teens growth",
+      "GAAP profitability still negative"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+17%",
+      "gross_margin": "75%",
+      "fcf_margin": "15%",
+      "roic": "N/A (GAAP loss)",
+      "debt_to_equity": "0.55",
+      "moat_strength": "narrow"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+25%",
+      "margin_expansion": "Non-GAAP margin at 16%",
+      "tam_expansion": "Search TAM growing 15%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 15,
+      "hold_ratings": 8,
+      "sell_ratings": 0,
+      "average_price_target": "$125",
+      "high_target": "$145",
+      "low_target": "$90"
+    },
+
+    "insider_activity": {
+      "recent_buys": 2,
+      "recent_sells": 5,
+      "net_shares_change": "-$30M (last 90 days)",
+      "notable_transactions": [
+        "Mixed executive activity"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 45.0,
+      "peg_ratio": 2.6,
+      "price_to_sales": 7.2,
+      "ev_to_ebitda": 42.0,
+      "valuation_vs_sector": "inline with software peers",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 52,
+      "macd": "neutral",
+      "moving_avg_50d": "$105",
+      "moving_avg_200d": "$95",
+      "trend": "consolidation",
+      "support_level": "$100",
+      "resistance_level": "$125"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.64",
+      "consensus_revenue": "$425M",
+      "earnings_surprise_history": ["+8%", "+10%", "+12%", "+6%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.68"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-11-20",
+        "headline": "Elastic Q2 FY26 Cloud Revenue Grows 25%",
+        "source": "Reuters",
+        "sentiment": "positive",
+        "summary": "AI and vector search driving new customer wins"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/ESTC",
+      "https://ir.elastic.co/",
+      "https://www.tipranks.com/stocks/estc/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "search", "observability", "ai", "large_cap"]
+  },
+  {
+    "id": "stock-019",
+    "ticker": "CFLT",
+    "company": "Confluent Inc.",
+    "sector": "AWS Ecosystem / Data Streaming",
+    "market_cap": "$9B",
+    "market_cap_category": "mid",
+
+    "earnings_date": "2026-02-05",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 50,
+    "found_date": "2025-12-17",
+
+    "match_score": 78,
+    "price_current": "$28.50",
+    "price_52w_high": "$35.00",
+    "price_52w_low": "$20.00",
+
+    "investment_thesis": "Confluent is the leading data streaming platform built on Apache Kafka with 21% revenue growth. Real-time data streaming essential for AI/ML workloads requiring up-to-date data. Potential IBM acquisition at $11B would provide 30%+ premium to current price.",
+
+    "catalysts": [
+      "IBM acquisition rumored at $11B (30%+ premium)",
+      "Real-time data streaming critical for AI workloads",
+      "Cloud revenue growing faster than overall",
+      "Large enterprise customer additions",
+      "Flink integration expanding platform"
+    ],
+
+    "risks": [
+      "Revenue growth decelerating from 24% to 21%",
+      "Competition from AWS Kinesis, Azure Event Hubs",
+      "Open source Kafka creating pricing pressure",
+      "Path to GAAP profitability unclear",
+      "M&A uncertainty may not materialize"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+21%",
+      "gross_margin": "72%",
+      "fcf_margin": "5%",
+      "roic": "N/A (GAAP loss)",
+      "debt_to_equity": "0.35",
+      "moat_strength": "narrow"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "stable",
+      "cloud_revenue_growth": "+25%",
+      "margin_expansion": "Improving but still negative GAAP",
+      "tam_expansion": "Data streaming TAM growing 20%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "buy",
+      "buy_ratings": 18,
+      "hold_ratings": 5,
+      "sell_ratings": 1,
+      "average_price_target": "$35",
+      "high_target": "$42",
+      "low_target": "$25"
+    },
+
+    "insider_activity": {
+      "recent_buys": 5,
+      "recent_sells": 8,
+      "net_shares_change": "-$15M (last 90 days)",
+      "notable_transactions": [
+        "Mixed activity, some director buying"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": "N/A",
+      "forward_pe": 85.0,
+      "peg_ratio": 4.0,
+      "price_to_sales": 8.5,
+      "ev_to_ebitda": 75.0,
+      "valuation_vs_sector": "inline with data infrastructure peers",
+      "growth_justifies_premium": "borderline"
+    },
+
+    "technical_indicators": {
+      "rsi": 55,
+      "macd": "bullish",
+      "moving_avg_50d": "$27",
+      "moving_avg_200d": "$25",
+      "trend": "uptrend",
+      "support_level": "$26",
+      "resistance_level": "$35"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$0.08",
+      "consensus_revenue": "$305M",
+      "earnings_surprise_history": ["+15%", "+10%", "+12%", "+8%"],
+      "beat_streak": 4,
+      "whisper_number": "$0.10"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-12",
+        "headline": "IBM in Talks to Acquire Confluent for $11B",
+        "source": "Bloomberg",
+        "sentiment": "positive",
+        "summary": "Potential acquisition would bolster IBM's data offerings"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/CFLT",
+      "https://investors.confluent.io/",
+      "https://www.tipranks.com/stocks/cflt/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["aws_ecosystem", "data_streaming", "kafka", "m&a_target", "mid_cap"]
+  },
+  {
+    "id": "stock-020",
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices Inc.",
+    "sector": "Semiconductors / AI",
+    "market_cap": "$195B",
+    "market_cap_category": "large",
+
+    "earnings_date": "2026-02-03",
+    "earnings_time": "after_market_close",
+    "days_until_earnings": 48,
+    "found_date": "2025-12-17",
+
+    "match_score": 80,
+    "price_current": "$120.00",
+    "price_52w_high": "$186.00",
+    "price_52w_low": "$116.00",
+
+    "investment_thesis": "AMD is the primary challenger to NVIDIA in AI GPUs with MI300X gaining traction in inference workloads. Data center revenue growing 50%+ driven by EPYC CPU share gains and GPU adoption. Diversified portfolio across PC, gaming, and embedded provides downside protection while AI GPU captures upside.",
+
+    "catalysts": [
+      "MI300X GPU gaining share in inference workloads",
+      "Data center CPU share gains continuing (EPYC)",
+      "MI400 next-gen GPU on roadmap",
+      "PC market recovery benefiting client CPUs",
+      "Embedded and gaming providing diversification"
+    ],
+
+    "risks": [
+      "NVIDIA CUDA ecosystem dominance in training",
+      "Competition from Intel in CPUs and custom chips",
+      "Valuation has compressed significantly",
+      "Execution risk on next-gen GPU roadmap",
+      "PC and gaming cyclicality"
+    ],
+
+    "fundamentals": {
+      "revenue_growth_yoy": "+18%",
+      "gross_margin": "52%",
+      "fcf_margin": "15%",
+      "roic": "12%",
+      "debt_to_equity": "0.05",
+      "moat_strength": "moderate"
+    },
+
+    "growth_signals": {
+      "ai_mentions_trend": "accelerating",
+      "cloud_revenue_growth": "+50% (Data Center)",
+      "margin_expansion": "Margins expanding with mix shift",
+      "tam_expansion": "AI GPU TAM growing 40%+ CAGR"
+    },
+
+    "analyst_sentiment": {
+      "consensus": "strong_buy",
+      "buy_ratings": 42,
+      "hold_ratings": 8,
+      "sell_ratings": 2,
+      "average_price_target": "$165",
+      "high_target": "$220",
+      "low_target": "$120"
+    },
+
+    "insider_activity": {
+      "recent_buys": 3,
+      "recent_sells": 8,
+      "net_shares_change": "-$50M (last 90 days)",
+      "notable_transactions": [
+        "CEO Lisa Su periodic 10b5-1 sales"
+      ],
+      "insider_sentiment": "neutral"
+    },
+
+    "valuation_metrics": {
+      "pe_ratio": 95.0,
+      "forward_pe": 28.0,
+      "peg_ratio": 1.6,
+      "price_to_sales": 7.5,
+      "ev_to_ebitda": 32.0,
+      "valuation_vs_sector": "discount vs NVDA, premium vs INTC",
+      "growth_justifies_premium": true
+    },
+
+    "technical_indicators": {
+      "rsi": 42,
+      "macd": "bearish",
+      "moving_avg_50d": "$130",
+      "moving_avg_200d": "$150",
+      "trend": "downtrend",
+      "support_level": "$115",
+      "resistance_level": "$145"
+    },
+
+    "earnings_expectations": {
+      "consensus_eps": "$1.15",
+      "consensus_revenue": "$7.8B",
+      "earnings_surprise_history": ["+5%", "+8%", "+3%", "+6%"],
+      "beat_streak": 4,
+      "whisper_number": "$1.20"
+    },
+
+    "recent_news": [
+      {
+        "date": "2025-12-05",
+        "headline": "AMD MI300X Gaining Share in AI Inference Workloads",
+        "source": "The Verge",
+        "sentiment": "positive",
+        "summary": "Cloud providers diversifying GPU suppliers"
+      }
+    ],
+
+    "research_sources": [
+      "https://finance.yahoo.com/quote/AMD",
+      "https://ir.amd.com/",
+      "https://www.tipranks.com/stocks/amd/forecast"
+    ],
+
+    "status": "watchlist",
+    "tags": ["semiconductors", "ai", "gpu", "cpu", "large_cap"]
+  }
+]
