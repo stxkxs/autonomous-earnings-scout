@@ -6,7 +6,7 @@ Continue building your earnings catalog by discovering more tech stocks with upc
 
 ## Step 1: Load Existing Catalog
 
-**Use the Read tool** to load `data/earnings.json` and analyze:
+**Use the Read tool** to load `ui/public/data/earnings.json` and analyze:
 
 ```
 - How many stocks already researched?
@@ -81,7 +81,7 @@ CRM NOW WDAY ADBE ORCL SAP TEAM ZM VEEV
 
 **Before researching any stock:**
 
-1. Check if ticker already exists in data/earnings.json
+1. Check if ticker already exists in ui/public/data/earnings.json
 2. If YES → SKIP IT (don't research again)
 3. If NO → Proceed with full research
 
@@ -120,18 +120,18 @@ Follow the same research process as initializer:
 
 **CRITICAL - DO NOT OVERWRITE:**
 
-1. **Use the Read tool** to load existing `data/earnings.json`
+1. **Use the Read tool** to load existing `ui/public/data/earnings.json`
 2. Parse the JSON to get the list of existing stocks
 3. Add your newly researched stocks to this list (checking for duplicates by ticker)
 4. Sort the combined list by `earnings_date` ascending
-5. **Use the Write tool** to save the updated list back to `data/earnings.json`
+5. **Use the Write tool** to save the updated list back to `ui/public/data/earnings.json`
 
 Example workflow:
 ```
-1. Read tool → data/earnings.json → get existing array
+1. Read tool → ui/public/data/earnings.json → get existing array
 2. In memory: existing_array.extend(new_stocks)
 3. In memory: sort by earnings_date
-4. Write tool → data/earnings.json → save complete array
+4. Write tool → ui/public/data/earnings.json → save complete array
 ```
 
 **Do NOT create a new file - you are updating the existing catalog!**

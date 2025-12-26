@@ -13,7 +13,7 @@ Discover upcoming tech company earnings, research fundamentals, and create a cat
 ## Step 1: Create Directory Structure
 
 ```bash
-mkdir -p data
+mkdir -p ui/public/data
 ```
 
 ---
@@ -369,7 +369,7 @@ Example:
 
 ## Step 6: Structure the Data
 
-**Use the Write tool** to create `data/earnings.json` with this exact structure:
+**Use the Write tool** to create `ui/public/data/earnings.json` with this exact structure:
 
 ```json
 [
@@ -592,7 +592,7 @@ Mark each as `"passes": true` when complete.
 ## Success Criteria
 
 When you're done with this session:
-- [x] Created data/earnings.json with 15-25 stocks
+- [x] Created ui/public/data/earnings.json with 15-25 stocks
 - [x] All stocks have earnings dates within configured timeframe
 - [x] All stocks scored ≥ minimum threshold
 - [x] Investment theses are specific and actionable
