@@ -100,7 +100,7 @@ export default function HomePage() {
           </div>
 
           {/* Stats Dashboard */}
-          <EarningsStats stocks={filteredStocks} />
+          <EarningsStats stocks={filteredStocks} onSelectStock={setSelectedStock} />
 
           {/* Filters */}
           <motion.div

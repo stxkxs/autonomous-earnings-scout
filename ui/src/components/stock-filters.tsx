@@ -57,7 +57,7 @@ export function StockFilters({
           <input
             type="text"
             placeholder="Search ticker, company, sector..."
-            className="w-full pl-9 pr-4 py-2 border rounded-lg text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+            className="w-full pl-9 pr-4 py-2 border border-input bg-background text-foreground rounded-lg text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             value={searchQuery}
             onChange={(e) => handleSearchChange(e.target.value)}
           />
@@ -65,9 +65,9 @@ export function StockFilters({
 
         {/* Score Filter */}
         <div>
-          <label className="text-sm font-medium mb-2 block flex items-center justify-between">
+          <label className="text-sm font-medium mb-2 block flex items-center justify-between text-foreground">
             <span>Min Score</span>
-            <span className="text-violet-600 font-bold">{minScore}</span>
+            <span className="text-primary font-bold">{minScore}</span>
           </label>
           <input
             type="range"
@@ -75,13 +75,13 @@ export function StockFilters({
             max="100"
             value={minScore}
             onChange={(e) => handleScoreChange(Number(e.target.value))}
-            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-violet-600"
+            className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer accent-primary"
           />
         </div>
 
         {/* Timeframe Filter */}
         <div>
-          <label className="text-sm font-medium mb-2 block">Earnings Timeframe</label>
+          <label className="text-sm font-medium mb-2 block text-foreground">Earnings Timeframe</label>
           <div className="grid grid-cols-4 gap-2">
             {[0, 7, 30, 60].map((days) => (
               <Button
@@ -99,7 +99,7 @@ export function StockFilters({
         {/* Sector Filter */}
         {availableSectors.length > 0 && (
           <div>
-            <label className="text-sm font-medium mb-2 block">Sectors</label>
+            <label className="text-sm font-medium mb-2 block text-foreground">Sectors</label>
             <div className="flex flex-wrap gap-2">
               {availableSectors.map((sector) => (
                 <Button
