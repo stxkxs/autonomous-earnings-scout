@@ -6,7 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { formatDate, formatDaysUntil, getEarningsTimeLabel } from "@/lib/stocks";
-import { Calendar, TrendingUp, TrendingDown, Clock, ChevronRight, Sparkles } from "lucide-react";
+import { Calendar, Clock, ChevronRight, Heart, Scale } from "lucide-react";
+import { useUserData } from "@/contexts/user-data-context";
 
 interface StockCardProps {
   stock: Stock;
@@ -21,6 +22,10 @@ export function StockCard({ stock, index, onSelect, isSelected }: StockCardProps
   const daysUntil = stock.days_until_earnings;
   const isUpcoming = daysUntil <= 7;
 
+  const { isWatchlisted, toggleWatchlist, isInComparison, toggleComparison, canAddToComparison } = useUserData();
+  const watchlisted = isWatchlisted(stock.ticker);
+  const inComparison = isInComparison(stock.ticker);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -34,16 +39,43 @@ export function StockCard({ stock, index, onSelect, isSelected }: StockCardProps
           isSelected
             ? "ring-2 ring-primary shadow-lg"
             : "hover:border-primary/50"
-        }`}
+        } ${stock.status === "priority" ? "bg-gradient-to-br from-emerald-500/[0.04] to-teal-500/[0.06] dark:from-emerald-500/[0.06] dark:to-teal-500/[0.08]" : ""}`}
         onClick={() => onSelect(stock)}
       >
-        {stock.status === "priority" && (
-          <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
-            <div className="absolute top-2 right-[-32px] rotate-45 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-[10px] font-bold py-1 w-32 text-center shadow-lg">
-              PRIORITY
-            </div>
-          </div>
-        )}
+        {/* Action icons */}
+        <div className="absolute top-3 right-3 flex items-center gap-1.5 z-10">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleWatchlist(stock.ticker);
+            }}
+            className="p-1.5 rounded-lg hover:bg-muted/80 transition-colors"
+            title={watchlisted ? "Remove from watchlist" : "Add to watchlist"}
+          >
+            <Heart
+              className={`h-4 w-4 transition-colors ${
+                watchlisted ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-400"
+              }`}
+            />
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (!inComparison && !canAddToComparison()) return;
+              toggleComparison(stock.ticker);
+            }}
+            className={`p-1.5 rounded-lg hover:bg-muted/80 transition-colors ${
+              !inComparison && !canAddToComparison() ? "opacity-30 cursor-not-allowed" : ""
+            }`}
+            title={inComparison ? "Remove from comparison" : "Add to comparison"}
+          >
+            <Scale
+              className={`h-4 w-4 transition-colors ${
+                inComparison ? "text-blue-500" : "text-muted-foreground hover:text-blue-400"
+              }`}
+            />
+          </button>
+        </div>
 
         <CardContent className="p-5">
           {/* Header */}
@@ -58,15 +90,20 @@ export function StockCard({ stock, index, onSelect, isSelected }: StockCardProps
                 </div>
               </div>
               <div className="min-w-0">
-                <h3 className="font-bold text-xl tracking-tight mb-0.5 group-hover:text-primary transition-colors">
+                <h3 className="font-bold text-xl tracking-tight mb-0.5 group-hover:text-primary transition-colors flex items-center gap-2">
                   {stock.ticker}
+                  {stock.status === "priority" && (
+                    <span className="text-[9px] font-bold tracking-wider px-1.5 py-0.5 rounded-md bg-gradient-to-r from-emerald-500 to-teal-600 text-white leading-none">
+                      PRIORITY
+                    </span>
+                  )}
                 </h3>
                 <p className="text-xs text-muted-foreground font-medium truncate max-w-[200px]">
                   {stock.company}
                 </p>
               </div>
             </div>
-            <ChevronRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+            <ChevronRight className="h-5 w-5 text-muted-foreground opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all mt-4" />
           </div>
 
           {/* Earnings Countdown */}

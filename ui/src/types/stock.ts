@@ -105,6 +105,16 @@ export interface StockStats {
   earningsByWeek: Record<string, number>;
 }
 
+export interface ChartFilter {
+  sectorFromChart: string | null;
+  scoreRangeFromChart: { min: number; max: number; label: string } | null;
+}
+
+export const emptyChartFilter: ChartFilter = {
+  sectorFromChart: null,
+  scoreRangeFromChart: null,
+};
+
 export type ScoreCategory = "priority" | "high" | "medium" | "low";
 
 export function getScoreCategory(score: number): ScoreCategory {

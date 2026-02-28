@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Stock, calculateStats } from "@/types/stock";
+import { Stock, calculateStats, ChartFilter } from "@/types/stock";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, Target, Layers, Award, ArrowUp, BarChart3, PieChart, Calendar, Crosshair } from "lucide-react";
+import { TrendingUp, Target, Layers, Award, ArrowUp, BarChart3, PieChart, Calendar, Crosshair, X } from "lucide-react";
 import {
   ScoreDistribution,
   SectorPie,
@@ -15,6 +15,10 @@ import {
 interface EarningsStatsProps {
   stocks: Stock[];
   onSelectStock?: (stock: Stock) => void;
+  onSectorClick?: (sector: string) => void;
+  onScoreRangeClick?: (range: { min: number; max: number; label: string }) => void;
+  chartFilter?: ChartFilter;
+  onClearChartFilter?: (key: "sectorFromChart" | "scoreRangeFromChart") => void;
 }
 
 const container = {
@@ -32,7 +36,14 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
-export function EarningsStats({ stocks, onSelectStock }: EarningsStatsProps) {
+export function EarningsStats({
+  stocks,
+  onSelectStock,
+  onSectorClick,
+  onScoreRangeClick,
+  chartFilter,
+  onClearChartFilter,
+}: EarningsStatsProps) {
   const stats = calculateStats(stocks);
   const avgScore = stocks.length > 0
     ? (stocks.reduce((sum, s) => sum + s.match_score, 0) / stocks.length).toFixed(1)
@@ -73,12 +84,24 @@ export function EarningsStats({ stocks, onSelectStock }: EarningsStatsProps) {
     {
       title: "Score Distribution",
       icon: BarChart3,
-      chart: <ScoreDistribution stocks={stocks} />,
+      chart: (
+        <ScoreDistribution
+          stocks={stocks}
+          onRangeClick={onScoreRangeClick}
+          activeRange={chartFilter?.scoreRangeFromChart}
+        />
+      ),
     },
     {
       title: "Sector Breakdown",
       icon: PieChart,
-      chart: <SectorPie stocks={stocks} />,
+      chart: (
+        <SectorPie
+          stocks={stocks}
+          onSectorClick={onSectorClick}
+          activeSector={chartFilter?.sectorFromChart}
+        />
+      ),
     },
     {
       title: "Earnings Timeline",
@@ -91,6 +114,9 @@ export function EarningsStats({ stocks, onSelectStock }: EarningsStatsProps) {
       chart: <UrgencyScatter stocks={stocks} onSelectStock={onSelectStock} />,
     },
   ];
+
+  const hasActiveChartFilter =
+    chartFilter?.sectorFromChart || chartFilter?.scoreRangeFromChart;
 
   return (
     <div className="space-y-6">
@@ -157,6 +183,34 @@ export function EarningsStats({ stocks, onSelectStock }: EarningsStatsProps) {
           </motion.div>
         ))}
       </motion.div>
+
+      {/* Active Chart Filter Badges */}
+      {hasActiveChartFilter && (
+        <div className="flex flex-wrap gap-2">
+          {chartFilter?.sectorFromChart && (
+            <Badge variant="secondary" className="gap-1 pr-1">
+              Sector: {chartFilter.sectorFromChart}
+              <button
+                onClick={() => onClearChartFilter?.("sectorFromChart")}
+                className="ml-1 p-0.5 rounded-full hover:bg-muted"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </Badge>
+          )}
+          {chartFilter?.scoreRangeFromChart && (
+            <Badge variant="secondary" className="gap-1 pr-1">
+              Score: {chartFilter.scoreRangeFromChart.label}
+              <button
+                onClick={() => onClearChartFilter?.("scoreRangeFromChart")}
+                className="ml-1 p-0.5 rounded-full hover:bg-muted"
+              >
+                <X className="h-3 w-3" />
+              </button>
+            </Badge>
+          )}
+        </div>
+      )}
     </div>
   );
 }

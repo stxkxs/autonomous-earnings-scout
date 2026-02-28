@@ -1,13 +1,13 @@
 "use client";
 
-import { Stock, getScoreColor, getScoreBgColor } from "@/types/stock";
+import { Stock, getScoreBgColor } from "@/types/stock";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { formatDate, getEarningsTimeLabel } from "@/lib/stocks";
-import { ExternalLink, TrendingUp, AlertCircle, X } from "lucide-react";
+import { ExternalLink, TrendingUp, AlertCircle, X, Heart } from "lucide-react";
 import {
   FundamentalsRadar,
   AnalystDonut,
@@ -16,6 +16,8 @@ import {
   ValuationBars,
   PriceGauge,
 } from "@/components/charts";
+import { StockNotes } from "@/components/stock-notes";
+import { useUserData } from "@/contexts/user-data-context";
 
 interface StockDetailProps {
   stock: Stock | null;
@@ -23,25 +25,42 @@ interface StockDetailProps {
 }
 
 export function StockDetail({ stock, onClose }: StockDetailProps) {
+  const { isWatchlisted, toggleWatchlist } = useUserData();
+
   if (!stock) {
     return null;
   }
 
   const scoreBg = getScoreBgColor(stock.match_score);
+  const watchlisted = isWatchlisted(stock.ticker);
 
   return (
     <Card className="h-full overflow-hidden flex flex-col border-0 shadow-sm">
       <CardHeader className="border-b p-6 relative">
-        {onClose && (
+        <div className="absolute top-4 right-4 flex items-center gap-1.5">
           <Button
             variant="ghost"
             size="icon"
-            onClick={onClose}
-            className="absolute top-4 right-4 lg:hidden"
+            onClick={() => toggleWatchlist(stock.ticker)}
+            className="rounded-xl"
           >
-            <X className="h-5 w-5" />
+            <Heart
+              className={`h-5 w-5 transition-colors ${
+                watchlisted ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-400"
+              }`}
+            />
           </Button>
-        )}
+          {onClose && (
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={onClose}
+              className="lg:hidden"
+            >
+              <X className="h-5 w-5" />
+            </Button>
+          )}
+        </div>
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
@@ -56,7 +75,7 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
               </Badge>
             </div>
           </div>
-          <div className="text-right">
+          <div className="text-right mr-16">
             <p className="text-2xl font-bold">{stock.price_current}</p>
             <p className="text-sm text-muted-foreground mt-1">{stock.market_cap}</p>
           </div>
@@ -98,6 +117,9 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </TabsTrigger>
             <TabsTrigger value="valuation" className="rounded-none">
               Valuation
+            </TabsTrigger>
+            <TabsTrigger value="notes" className="rounded-none">
+              Notes
             </TabsTrigger>
           </TabsList>
 
@@ -305,6 +327,13 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
                     ))}
                   </div>
                 </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="notes" className="mt-0">
+              <div className="space-y-4">
+                <h3 className="text-sm font-semibold">Your Notes</h3>
+                <StockNotes ticker={stock.ticker} />
               </div>
             </TabsContent>
           </div>

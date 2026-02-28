@@ -1,18 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp, Moon, Sun, LineChart, Zap } from "lucide-react";
+import { Moon, Sun, LineChart, Zap, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from "react";
 
-export function Header() {
+interface HeaderProps {
+  lastUpdated?: string | null;
+  isRefreshing?: boolean;
+  onRefresh?: () => void;
+}
+
+function formatTimeAgo(isoString: string): string {
+  const diff = Math.floor((Date.now() - new Date(isoString).getTime()) / 1000);
+  if (diff < 10) return "just now";
+  if (diff < 60) return `${diff}s ago`;
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+  return `${Math.floor(diff / 86400)}d ago`;
+}
+
+export function Header({ lastUpdated, isRefreshing, onRefresh }: HeaderProps) {
   const [isDark, setIsDark] = useState(false);
+  const [timeAgo, setTimeAgo] = useState("");
 
   useEffect(() => {
     const isDarkMode = document.documentElement.classList.contains("dark");
     setIsDark(isDarkMode);
   }, []);
+
+  // Re-compute "Updated Xs ago" every 10s
+  useEffect(() => {
+    if (!lastUpdated) return;
+    setTimeAgo(formatTimeAgo(lastUpdated));
+    const interval = setInterval(() => {
+      setTimeAgo(formatTimeAgo(lastUpdated));
+    }, 10_000);
+    return () => clearInterval(interval);
+  }, [lastUpdated]);
 
   const toggleTheme = () => {
     const newIsDark = !isDark;
@@ -51,8 +77,15 @@ export function Header() {
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-muted/50">
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-xs font-medium">Live Data</span>
+            <span className="text-xs font-medium">
+              {lastUpdated && timeAgo ? `Updated ${timeAgo}` : "Live Data"}
+            </span>
           </div>
+          {onRefresh && (
+            <Button variant="ghost" size="icon" onClick={onRefresh} className="rounded-xl" disabled={isRefreshing}>
+              <RefreshCw className={`h-4 w-4 ${isRefreshing ? "animate-spin" : ""}`} />
+            </Button>
+          )}
           <Button variant="ghost" size="icon" onClick={toggleTheme} className="rounded-xl">
             {isDark ? (
               <Sun className="h-5 w-5" />

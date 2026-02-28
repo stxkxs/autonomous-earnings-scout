@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, Heart, Scale, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface StockFiltersProps {
@@ -11,6 +12,12 @@ interface StockFiltersProps {
   onSectorChange: (sectors: string[]) => void;
   onTimeframeChange: (days: number) => void;
   availableSectors: string[];
+  showWatchlistOnly?: boolean;
+  onWatchlistToggle?: () => void;
+  watchlistCount?: number;
+  comparisonCount?: number;
+  onOpenComparison?: () => void;
+  onExportCsv?: () => void;
 }
 
 export function StockFilters({
@@ -19,6 +26,12 @@ export function StockFilters({
   onSectorChange,
   onTimeframeChange,
   availableSectors,
+  showWatchlistOnly,
+  onWatchlistToggle,
+  watchlistCount = 0,
+  comparisonCount = 0,
+  onOpenComparison,
+  onExportCsv,
 }: StockFiltersProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [minScore, setMinScore] = useState(75);
@@ -51,6 +64,47 @@ export function StockFilters({
   return (
     <Card className="border-0 shadow-sm">
       <CardContent className="p-6 space-y-6">
+        {/* Action Bar */}
+        <div className="flex flex-wrap items-center gap-2">
+          {onWatchlistToggle && (
+            <Button
+              variant={showWatchlistOnly ? "default" : "outline"}
+              size="sm"
+              onClick={onWatchlistToggle}
+              className="gap-1.5"
+            >
+              <Heart className={`h-3.5 w-3.5 ${showWatchlistOnly ? "fill-current" : ""}`} />
+              Watchlist
+              {watchlistCount > 0 && (
+                <Badge variant={showWatchlistOnly ? "secondary" : "outline"} className="text-[10px] px-1.5 py-0 ml-0.5">
+                  {watchlistCount}
+                </Badge>
+              )}
+            </Button>
+          )}
+          {onOpenComparison && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={onOpenComparison}
+              disabled={comparisonCount < 2}
+              className="gap-1.5"
+            >
+              <Scale className="h-3.5 w-3.5" />
+              Compare
+              <Badge variant="outline" className="text-[10px] px-1.5 py-0 ml-0.5">
+                {comparisonCount}/3
+              </Badge>
+            </Button>
+          )}
+          {onExportCsv && (
+            <Button variant="outline" size="sm" onClick={onExportCsv} className="gap-1.5">
+              <Download className="h-3.5 w-3.5" />
+              Export CSV
+            </Button>
+          )}
+        </div>
+
         {/* Search */}
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />

@@ -6,6 +6,8 @@ import { Stock } from "@/types/stock";
 
 interface SectorPieProps {
   stocks: Stock[];
+  onSectorClick?: (sector: string) => void;
+  activeSector?: string | null;
 }
 
 // Color palette for sectors
@@ -22,7 +24,7 @@ const sectorColors = [
   "#14b8a6", // teal
 ];
 
-export function SectorPie({ stocks }: SectorPieProps) {
+export function SectorPie({ stocks, onSectorClick, activeSector }: SectorPieProps) {
   // Calculate sector distribution
   const sectorCounts: Record<string, number> = {};
   stocks.forEach(stock => {
@@ -65,9 +67,20 @@ export function SectorPie({ stocks }: SectorPieProps) {
           dataKey="value"
           animationDuration={500}
           animationEasing="ease-out"
+          cursor={onSectorClick ? "pointer" : undefined}
+          onClick={onSectorClick ? (_: unknown, index: number) => {
+            const sector = data[index]?.name;
+            if (sector && sector !== "Other") onSectorClick(sector);
+          } : undefined}
         >
           {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={entry.color} strokeWidth={0} />
+            <Cell
+              key={`cell-${index}`}
+              fill={entry.color}
+              strokeWidth={activeSector === entry.name ? 2 : 0}
+              stroke={activeSector === entry.name ? "#ffffff" : "none"}
+              fillOpacity={activeSector && activeSector !== entry.name ? 0.3 : 1}
+            />
           ))}
         </Pie>
         <Tooltip

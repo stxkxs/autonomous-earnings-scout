@@ -5,6 +5,7 @@ export { ActiveDot } from "./active-dot";
 
 // Stock detail charts
 export { FundamentalsRadar } from "./fundamentals-radar";
+export { ComparisonRadar } from "./comparison-radar";
 export { AnalystDonut } from "./analyst-donut";
 export { PriceTargetRange } from "./price-target-range";
 export { EarningsSurprise } from "./earnings-surprise";

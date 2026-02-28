@@ -7,9 +7,11 @@ import { Stock } from "@/types/stock";
 
 interface ScoreDistributionProps {
   stocks: Stock[];
+  onRangeClick?: (range: { min: number; max: number; label: string }) => void;
+  activeRange?: { min: number; max: number } | null;
 }
 
-export function ScoreDistribution({ stocks }: ScoreDistributionProps) {
+export function ScoreDistribution({ stocks, onRangeClick, activeRange }: ScoreDistributionProps) {
   // Create score tiers based on filtered stocks
   const tiers = [
     { range: "90+", min: 90, max: 100, color: chartColors.priority, label: "Priority" },
@@ -23,7 +25,12 @@ export function ScoreDistribution({ stocks }: ScoreDistributionProps) {
     count: stocks.filter(s => s.match_score >= tier.min && s.match_score <= tier.max).length,
     color: tier.color,
     label: tier.label,
+    min: tier.min,
+    max: tier.max,
   })).filter(d => d.count > 0); // Only show tiers with data
+
+  const isActive = (item: { min: number; max: number }) =>
+    activeRange && activeRange.min === item.min && activeRange.max === item.max;
 
   if (stocks.length === 0 || data.length === 0) {
     return (
@@ -71,9 +78,20 @@ export function ScoreDistribution({ stocks }: ScoreDistributionProps) {
           radius={[6, 6, 0, 0]}
           animationDuration={500}
           animationEasing="ease-out"
+          cursor={onRangeClick ? "pointer" : undefined}
+          onClick={onRangeClick ? (_: unknown, index: number) => {
+            const item = data[index];
+            if (item) onRangeClick({ min: item.min, max: item.max, label: `${item.label} (${item.range})` });
+          } : undefined}
         >
           {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={entry.color} />
+            <Cell
+              key={`cell-${index}`}
+              fill={entry.color}
+              fillOpacity={activeRange && !isActive(entry) ? 0.3 : 1}
+              strokeWidth={isActive(entry) ? 2 : 0}
+              stroke={isActive(entry) ? "#ffffff" : "none"}
+            />
           ))}
         </Bar>
       </BarChart>
