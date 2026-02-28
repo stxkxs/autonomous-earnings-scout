@@ -56,13 +56,13 @@ export function ValuationBars({ stock }: ValuationBarsProps) {
       >
         <XAxis
           type="number"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
-          axisLine={{ stroke: "#52525b" }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
+          axisLine={{ stroke: "#3f3f46" }}
         />
         <YAxis
           type="category"
           dataKey="name"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           axisLine={false}
           tickLine={false}
           width={55}

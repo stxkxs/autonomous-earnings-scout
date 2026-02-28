@@ -3,28 +3,28 @@
 
 export const chartColors = {
   // Primary chart colors
-  primary: "#14b8a6", // teal-500
+  primary: "#5b8def", // muted blue
   secondary: "#06b6d4", // cyan-500
   tertiary: "#8b5cf6", // violet-500
   quaternary: "#84cc16", // lime-500
   quinary: "#f59e0b", // amber-500
   // Score tier colors
-  priority: "#10b981", // emerald-500
-  high: "#3b82f6", // blue-500
-  medium: "#f59e0b", // amber-500
-  low: "#6b7280", // gray-500
+  priority: "#4ade80", // emerald-400
+  high: "#38bdf8", // sky-400
+  medium: "#fbbf24", // amber-400
+  low: "#71717a", // zinc-500
   // Sentiment colors
-  positive: "#10b981", // emerald-500
-  neutral: "#6b7280", // gray-500
+  positive: "#4ade80", // emerald-400
+  neutral: "#71717a", // zinc-500
   negative: "#ef4444", // red-500
   // UI colors
-  muted: "#a1a1aa", // zinc-400 (more visible)
+  muted: "#71717a", // zinc-500
   background: "#ffffff",
   foreground: "#18181b", // zinc-900
-  border: "#d4d4d8", // zinc-300 (more visible)
+  border: "#d4d4d8", // zinc-300
   // Dark mode variants
-  mutedDark: "#a1a1aa", // zinc-400
-  borderDark: "#52525b", // zinc-600
+  mutedDark: "#71717a", // zinc-500
+  borderDark: "#3f3f46", // zinc-700
 } as const;
 
 // Helper to get theme-aware colors (call from component with isDark boolean)
@@ -58,11 +58,12 @@ export const chartBreakpoints = {
 export const chartStyles = {
   tooltip: {
     contentStyle: {
-      backgroundColor: "hsl(var(--card))",
-      border: "1px solid hsl(var(--border))",
-      borderRadius: "8px",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+      backgroundColor: "oklch(0.14 0.005 240)",
+      border: "1px solid oklch(0.24 0.005 240)",
+      borderRadius: "4px",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
       backdropFilter: "blur(8px)",
+      fontFamily: "var(--font-body, ui-sans-serif, system-ui, sans-serif)",
     },
     labelStyle: {
       fontWeight: 600,
@@ -72,7 +73,8 @@ export const chartStyles = {
   axis: {
     tick: {
       fill: "hsl(var(--muted-foreground))",
-      fontSize: 11,
+      fontSize: 10,
+      fontFamily: "var(--font-mono, ui-monospace, monospace)",
     },
     axisLine: {
       stroke: "hsl(var(--border))",

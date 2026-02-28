@@ -16,7 +16,7 @@ interface ComparisonRadarProps {
   stocks: Stock[];
 }
 
-const COLORS = ["#10b981", "#3b82f6", "#f59e0b"];
+const COLORS = ["#4ade80", "#38bdf8", "#fbbf24"];
 
 function normalizeValue(value: string | number, max: number): number {
   if (typeof value === "number") return Math.min((value / max) * 100, 100);
@@ -73,10 +73,10 @@ export function ComparisonRadar({ stocks }: ComparisonRadarProps) {
   return (
     <ChartWrapper height={300}>
       <RadarChart cx="50%" cy="50%" outerRadius="65%" data={data}>
-        <PolarGrid stroke="#52525b" strokeOpacity={0.5} />
+        <PolarGrid stroke="#3f3f46" strokeOpacity={0.5} />
         <PolarAngleAxis
           dataKey="metric"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           tickLine={false}
         />
         {stocks.map((stock, i) => (

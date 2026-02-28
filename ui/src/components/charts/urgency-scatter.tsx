@@ -43,22 +43,22 @@ export function UrgencyScatter({ stocks, onSelectStock }: UrgencyScatterProps) {
       <ScatterChart margin={{ top: 10, right: 10, bottom: 25, left: 35 }}>
         <CartesianGrid
           strokeDasharray="3 3"
-          stroke="#52525b"
+          stroke="#3f3f46"
           strokeOpacity={0.5}
         />
         <XAxis
           type="number"
           dataKey="x"
           name="Days"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
-          axisLine={{ stroke: "#52525b" }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
+          axisLine={{ stroke: "#3f3f46" }}
           tickLine={false}
           label={{
             value: "Days Until Earnings",
             position: "bottom",
             offset: 10,
             fontSize: 10,
-            fill: "#a1a1aa",
+            fill: "#71717a",
           }}
         />
         <YAxis
@@ -66,7 +66,7 @@ export function UrgencyScatter({ stocks, onSelectStock }: UrgencyScatterProps) {
           dataKey="y"
           name="Score"
           domain={["dataMin - 5", "dataMax + 5"]}
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           axisLine={false}
           tickLine={false}
           label={{
@@ -75,7 +75,7 @@ export function UrgencyScatter({ stocks, onSelectStock }: UrgencyScatterProps) {
             position: "insideLeft",
             offset: 15,
             fontSize: 10,
-            fill: "#a1a1aa",
+            fill: "#71717a",
           }}
         />
         <ZAxis type="number" dataKey="z" range={[50, 150]} />

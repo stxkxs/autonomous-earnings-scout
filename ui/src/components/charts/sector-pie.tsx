@@ -12,16 +12,16 @@ interface SectorPieProps {
 
 // Color palette for sectors
 const sectorColors = [
-  "#10b981", // emerald
-  "#3b82f6", // blue
-  "#8b5cf6", // violet
-  "#f59e0b", // amber
-  "#ec4899", // pink
-  "#06b6d4", // cyan
-  "#84cc16", // lime
-  "#f97316", // orange
-  "#6366f1", // indigo
-  "#14b8a6", // teal
+  "#4ade80", // emerald-400
+  "#38bdf8", // sky-400
+  "#a78bfa", // violet-400
+  "#fbbf24", // amber-400
+  "#f472b6", // pink-400
+  "#22d3ee", // cyan-400
+  "#a3e635", // lime-400
+  "#fb923c", // orange-400
+  "#818cf8", // indigo-400
+  "#2dd4bf", // teal-400
 ];
 
 export function SectorPie({ stocks, onSectorClick, activeSector }: SectorPieProps) {

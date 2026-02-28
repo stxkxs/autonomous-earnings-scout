@@ -135,7 +135,7 @@ export function EarningsCalendar({ stocks, selectedStock, onSelectStock }: Earni
       </div>
 
       {/* Weekday headers */}
-      <div className="grid grid-cols-7 gap-1 mb-1">
+      <div className="grid grid-cols-7 gap-px mb-1">
         {WEEKDAYS.map((day) => (
           <div key={day} className="text-center text-xs font-medium text-muted-foreground py-1">
             {day}
@@ -144,7 +144,7 @@ export function EarningsCalendar({ stocks, selectedStock, onSelectStock }: Earni
       </div>
 
       {/* Calendar grid */}
-      <div className="grid grid-cols-7 gap-1">
+      <div className="grid grid-cols-7 gap-px">
         {calendarDays.map((day, idx) => {
           const avgScore =
             day.stocks.length > 0
@@ -157,7 +157,7 @@ export function EarningsCalendar({ stocks, selectedStock, onSelectStock }: Earni
           return (
             <div
               key={idx}
-              className={`min-h-[80px] rounded-lg border p-1 text-xs transition-colors ${
+              className={`min-h-[64px] rounded border p-0.5 text-xs transition-colors ${
                 day.isCurrentMonth ? heat || "border-border" : "opacity-30 border-transparent"
               }`}
             >

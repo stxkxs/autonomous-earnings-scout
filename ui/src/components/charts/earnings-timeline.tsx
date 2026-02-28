@@ -66,19 +66,19 @@ export function EarningsTimeline({ stocks }: EarningsTimelineProps) {
         </defs>
         <CartesianGrid
           strokeDasharray="3 3"
-          stroke="#52525b"
+          stroke="#3f3f46"
           strokeOpacity={0.5}
           vertical={false}
         />
         <XAxis
           dataKey="displayDate"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
-          axisLine={{ stroke: "#52525b" }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
+          axisLine={{ stroke: "#3f3f46" }}
           tickLine={false}
           interval="preserveStartEnd"
         />
         <YAxis
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           axisLine={false}
           tickLine={false}
           allowDecimals={false}

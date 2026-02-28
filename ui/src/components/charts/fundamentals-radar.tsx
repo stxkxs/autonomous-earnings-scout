@@ -69,10 +69,10 @@ export function FundamentalsRadar({ stock }: FundamentalsRadarProps) {
   return (
     <ChartWrapper height={220}>
       <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
-        <PolarGrid stroke="#52525b" strokeOpacity={0.5} />
+        <PolarGrid stroke="#3f3f46" strokeOpacity={0.5} />
         <PolarAngleAxis
           dataKey="metric"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           tickLine={false}
         />
         <Radar

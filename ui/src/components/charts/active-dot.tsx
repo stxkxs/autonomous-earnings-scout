@@ -9,7 +9,7 @@ interface ActiveDotProps {
   r?: number;
 }
 
-export function ActiveDot({ cx, cy, fill = "#10b981", r = 6 }: ActiveDotProps) {
+export function ActiveDot({ cx, cy, fill = "#4ade80", r = 6 }: ActiveDotProps) {
   if (cx === undefined || cy === undefined) return null;
 
   return (

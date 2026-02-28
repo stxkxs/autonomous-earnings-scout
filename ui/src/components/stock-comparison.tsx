@@ -40,7 +40,7 @@ export function StockComparison({ stocks }: StockComparisonProps) {
           <div />
           {stocks.map((stock) => (
             <div key={stock.ticker} className="text-center">
-              <p className="font-bold text-lg">{stock.ticker}</p>
+              <p className="font-bold text-base font-mono-num">{stock.ticker}</p>
               <p className="text-xs text-muted-foreground truncate">{stock.company}</p>
               <Badge className={`mt-1 ${getScoreBgColor(stock.match_score)} text-white text-xs`}>
                 {stock.match_score}
@@ -62,11 +62,11 @@ export function StockComparison({ stocks }: StockComparisonProps) {
               className={`grid items-center ${i % 2 === 0 ? "bg-muted/30" : ""}`}
               style={{ gridTemplateColumns: `140px repeat(${stocks.length}, 1fr)` }}
             >
-              <div className="px-3 py-2 text-xs font-medium text-muted-foreground">
+              <div className="px-2 py-1.5 text-xs font-medium text-muted-foreground">
                 {row.label}
               </div>
               {stocks.map((stock) => (
-                <div key={stock.ticker} className="px-3 py-2 text-sm font-medium text-center capitalize">
+                <div key={stock.ticker} className="px-2 py-1.5 text-xs font-medium font-mono-num text-center capitalize">
                   {row.getValue(stock)}
                 </div>
               ))}

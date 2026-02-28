@@ -35,7 +35,7 @@ export function ChartTooltip({
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.15 }}
-        className="bg-card/95 backdrop-blur-md border border-border rounded-lg shadow-lg px-3 py-2 text-sm"
+        className="bg-card/95 backdrop-blur-md border border-border rounded px-2.5 py-1.5 text-xs"
       >
         {formattedLabel && (
           <p className="font-semibold text-foreground mb-1">{formattedLabel}</p>

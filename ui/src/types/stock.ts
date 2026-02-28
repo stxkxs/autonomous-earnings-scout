@@ -125,17 +125,17 @@ export function getScoreCategory(score: number): ScoreCategory {
 }
 
 export function getScoreColor(score: number): string {
-  if (score >= 90) return "text-emerald-500";
-  if (score >= 80) return "text-blue-500";
-  if (score >= 75) return "text-amber-500";
-  return "text-gray-500";
+  if (score >= 90) return "text-emerald-400";
+  if (score >= 80) return "text-sky-400";
+  if (score >= 75) return "text-amber-400";
+  return "text-zinc-500";
 }
 
 export function getScoreBgColor(score: number): string {
   if (score >= 90) return "bg-emerald-500";
-  if (score >= 80) return "bg-blue-500";
+  if (score >= 80) return "bg-sky-500";
   if (score >= 75) return "bg-amber-500";
-  return "bg-gray-500";
+  return "bg-zinc-500";
 }
 
 export function calculateStats(stocks: Stock[]): StockStats {

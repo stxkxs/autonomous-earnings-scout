@@ -37,12 +37,12 @@ export function EarningsSurprise({ stock }: EarningsSurpriseProps) {
       >
         <XAxis
           dataKey="quarter"
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
-          axisLine={{ stroke: "#52525b" }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
+          axisLine={{ stroke: "#3f3f46" }}
           tickLine={false}
         />
         <YAxis
-          tick={{ fill: "#a1a1aa", fontSize: 10 }}
+          tick={{ fill: "#71717a", fontSize: 10 }}
           axisLine={false}
           tickLine={false}
           tickFormatter={(v) => `${v}%`}
@@ -62,7 +62,7 @@ export function EarningsSurprise({ stock }: EarningsSurpriseProps) {
             );
           }}
         />
-        <ReferenceLine y={0} stroke="#52525b" />
+        <ReferenceLine y={0} stroke="#3f3f46" />
         <Bar
           dataKey="surprise"
           radius={[4, 4, 0, 0]}

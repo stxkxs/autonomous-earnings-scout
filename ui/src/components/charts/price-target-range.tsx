@@ -53,14 +53,14 @@ export function PriceTargetRange({ stock }: PriceTargetRangeProps) {
           <XAxis
             type="number"
             domain={[lowTarget * 0.95, highTarget * 1.05]}
-            tick={{ fill: "#a1a1aa", fontSize: 10 }}
+            tick={{ fill: "#71717a", fontSize: 10 }}
             tickFormatter={(v) => `$${v.toFixed(0)}`}
-            axisLine={{ stroke: "#52525b" }}
+            axisLine={{ stroke: "#3f3f46" }}
           />
           <YAxis
             type="category"
             dataKey="name"
-            tick={{ fill: "#a1a1aa", fontSize: 10 }}
+            tick={{ fill: "#71717a", fontSize: 10 }}
             axisLine={false}
             tickLine={false}
             width={55}

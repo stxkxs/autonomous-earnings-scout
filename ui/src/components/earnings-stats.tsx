@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Stock, calculateStats, ChartFilter } from "@/types/stock";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, Target, Layers, Award, ArrowUp, BarChart3, PieChart, Calendar, Crosshair, X } from "lucide-react";
+import { TrendingUp, Target, Layers, Award, BarChart3, PieChart, Calendar, Crosshair, X } from "lucide-react";
 import {
   ScoreDistribution,
   SectorPie,
@@ -26,13 +26,13 @@ const container = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08,
+      staggerChildren: 0.04,
     },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 6 },
   show: { opacity: 1, y: 0 },
 };
 
@@ -54,28 +54,24 @@ export function EarningsStats({
       title: "Total Opportunities",
       value: stats.total,
       icon: Layers,
-      gradient: "from-slate-500 to-slate-600",
       badge: null,
     },
     {
       title: "Priority Picks",
       value: stats.priority,
       icon: Target,
-      gradient: "from-emerald-500 to-teal-600",
       badge: "90+ Score",
     },
     {
       title: "High Quality",
       value: stats.highScore,
       icon: Award,
-      gradient: "from-blue-500 to-cyan-600",
       badge: "80-89",
     },
     {
       title: "Average Score",
       value: avgScore,
       icon: TrendingUp,
-      gradient: "from-amber-500 to-orange-600",
       badge: null,
     },
   ];
@@ -119,7 +115,7 @@ export function EarningsStats({
     chartFilter?.sectorFromChart || chartFilter?.scoreRangeFromChart;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       {/* Stats Cards */}
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
@@ -129,10 +125,9 @@ export function EarningsStats({
       >
         {cards.map((card) => (
           <motion.div key={card.title} variants={item}>
-            <Card className="relative overflow-hidden border bg-card hover:shadow-lg transition-all group">
-              <div className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-[0.03] group-hover:opacity-[0.06] transition-opacity`} />
-              <CardContent className="relative p-5">
-                <div className="flex items-start justify-between mb-4">
+            <Card className="relative overflow-hidden border bg-card transition-all">
+              <CardContent className="relative p-3">
+                <div className="flex items-start justify-between mb-2">
                   <div>
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">
                       {card.title}
@@ -143,17 +138,11 @@ export function EarningsStats({
                       </Badge>
                     )}
                   </div>
-                  <div className={`p-2.5 rounded-xl bg-gradient-to-br ${card.gradient} shadow-lg`}>
-                    <card.icon className="h-4 w-4 text-white" strokeWidth={2.5} />
+                  <div className="p-1.5 rounded bg-muted/50">
+                    <card.icon className="h-4 w-4 text-muted-foreground" strokeWidth={2} />
                   </div>
                 </div>
-                <div className="flex items-end justify-between">
-                  <p className="text-4xl font-bold tracking-tight">{card.value}</p>
-                  <div className="flex items-center gap-1 text-emerald-600 text-xs font-semibold">
-                    <ArrowUp className="h-3 w-3" />
-                    <span>Live</span>
-                  </div>
-                </div>
+                <p className="text-2xl font-bold tracking-tight font-mono-num">{card.value}</p>
               </CardContent>
             </Card>
           </motion.div>
@@ -169,7 +158,7 @@ export function EarningsStats({
       >
         {chartCards.map((chart, index) => (
           <motion.div key={chart.title} variants={item} custom={index}>
-            <Card className="border bg-card hover:shadow-lg transition-all">
+            <Card className="border bg-card transition-all">
               <CardContent className="p-4">
                 <div className="flex items-center gap-2 mb-3">
                   <div className="p-1.5 rounded-lg bg-muted">

@@ -48,12 +48,12 @@ export function ScoreDistribution({ stocks, onRangeClick, activeRange }: ScoreDi
       >
         <XAxis
           dataKey="range"
-          tick={{ fill: "#a1a1aa", fontSize: 11 }}
-          axisLine={{ stroke: "#52525b" }}
+          tick={{ fill: "#71717a", fontSize: 11 }}
+          axisLine={{ stroke: "#3f3f46" }}
           tickLine={false}
         />
         <YAxis
-          tick={{ fill: "#a1a1aa", fontSize: 11 }}
+          tick={{ fill: "#71717a", fontSize: 11 }}
           axisLine={false}
           tickLine={false}
           allowDecimals={false}
@@ -75,7 +75,7 @@ export function ScoreDistribution({ stocks, onRangeClick, activeRange }: ScoreDi
         />
         <Bar
           dataKey="count"
-          radius={[6, 6, 0, 0]}
+          radius={[3, 3, 0, 0]}
           animationDuration={500}
           animationEasing="ease-out"
           cursor={onRangeClick ? "pointer" : undefined}

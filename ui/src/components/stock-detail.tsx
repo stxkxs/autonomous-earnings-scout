@@ -35,17 +35,17 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
   const watchlisted = isWatchlisted(stock.ticker);
 
   return (
-    <Card className="h-full overflow-hidden flex flex-col border-0 shadow-sm">
-      <CardHeader className="border-b p-6 relative">
-        <div className="absolute top-4 right-4 flex items-center gap-1.5">
+    <Card className="h-full overflow-hidden flex flex-col border shadow-none">
+      <CardHeader className="border-b p-4 relative">
+        <div className="absolute top-3 right-3 flex items-center gap-1.5">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => toggleWatchlist(stock.ticker)}
-            className="rounded-xl"
+            className="rounded-md h-8 w-8"
           >
             <Heart
-              className={`h-5 w-5 transition-colors ${
+              className={`h-4 w-4 transition-colors ${
                 watchlisted ? "fill-red-500 text-red-500" : "text-muted-foreground hover:text-red-400"
               }`}
             />
@@ -55,17 +55,17 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
               variant="ghost"
               size="icon"
               onClick={onClose}
-              className="lg:hidden"
+              className="lg:hidden h-8 w-8"
             >
-              <X className="h-5 w-5" />
+              <X className="h-4 w-4" />
             </Button>
           )}
         </div>
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-2">
-              <CardTitle className="text-2xl font-bold">{stock.ticker}</CardTitle>
-              <Badge className={scoreBg + " text-white font-bold px-2 py-1"}>{stock.match_score}</Badge>
+              <CardTitle className="text-xl font-bold font-mono-num">{stock.ticker}</CardTitle>
+              <Badge className={scoreBg + " text-white font-bold px-2 py-1 font-mono-num"}>{stock.match_score}</Badge>
             </div>
             <p className="text-sm text-muted-foreground mb-3">{stock.company}</p>
             <div className="flex gap-2">
@@ -76,29 +76,29 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </div>
           </div>
           <div className="text-right mr-16">
-            <p className="text-2xl font-bold">{stock.price_current}</p>
+            <p className="text-xl font-bold font-mono-num">{stock.price_current}</p>
             <p className="text-sm text-muted-foreground mt-1">{stock.market_cap}</p>
           </div>
         </div>
 
         {/* Earnings Info */}
-        <div className="grid grid-cols-3 gap-3 mt-4">
-          <div className="p-3 bg-muted/50 rounded-lg">
-            <p className="text-xs text-muted-foreground mb-1">Earnings Date</p>
-            <p className="font-semibold text-sm">{formatDate(stock.earnings_date)}</p>
+        <div className="grid grid-cols-3 gap-2 mt-3">
+          <div className="p-2 bg-muted/50 rounded">
+            <p className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1">Earnings Date</p>
+            <p className="font-semibold text-sm font-mono-num">{formatDate(stock.earnings_date)}</p>
             <p className="text-xs text-muted-foreground mt-1">{getEarningsTimeLabel(stock.earnings_time)}</p>
           </div>
-          <div className="p-3 bg-muted/50 rounded-lg col-span-2">
-            <p className="text-xs text-muted-foreground mb-1">Analyst Consensus</p>
+          <div className="p-2 bg-muted/50 rounded col-span-2">
+            <p className="text-[10px] text-muted-foreground uppercase tracking-wider mb-1">Analyst Consensus</p>
             <p className="text-xs font-semibold capitalize">
               {stock.analyst_sentiment.consensus.replace("_", " ")}
             </p>
-            <p className="text-xs text-muted-foreground mt-1">Target: {stock.analyst_sentiment.average_price_target}</p>
+            <p className="text-xs text-muted-foreground mt-1 font-mono-num">Target: {stock.analyst_sentiment.average_price_target}</p>
           </div>
         </div>
 
         {/* 52-Week Price Gauge */}
-        <div className="mt-4 p-3 bg-muted/30 rounded-lg">
+        <div className="mt-3 p-2 bg-muted/30 rounded">
           <PriceGauge stock={stock} />
         </div>
       </CardHeader>
@@ -123,9 +123,9 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </TabsTrigger>
           </TabsList>
 
-          <div className="p-6">
+          <div className="p-4">
             <TabsContent value="overview" className="mt-0">
-              <div className="space-y-8">
+              <div className="space-y-5">
                 {/* Investment Thesis */}
                 <div>
                   <h3 className="text-sm font-semibold mb-2 flex items-center gap-2">
@@ -137,7 +137,7 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
 
                 {/* Catalysts */}
                 <div>
-                  <h3 className="text-sm font-semibold mb-2 text-emerald-600 dark:text-emerald-400 flex items-center gap-2">
+                  <h3 className="text-sm font-semibold mb-2 text-emerald-500 dark:text-emerald-400 flex items-center gap-2">
                     <TrendingUp className="w-4 h-4" />
                     Catalysts
                   </h3>
@@ -186,11 +186,11 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </TabsContent>
 
             <TabsContent value="fundamentals" className="mt-0">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Fundamentals Radar Chart */}
                 <div>
                   <h3 className="text-sm font-semibold mb-3">Fundamentals Overview</h3>
-                  <div className="bg-muted/30 rounded-lg p-2">
+                  <div className="bg-muted/30 rounded p-2">
                     <FundamentalsRadar stock={stock} />
                   </div>
                 </div>
@@ -235,7 +235,7 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
                     {stock.earnings_expectations.earnings_surprise_history.length > 0 && (
                       <div className="mt-4">
                         <p className="text-xs text-muted-foreground mb-2">Earnings Surprise History</p>
-                        <div className="bg-muted/30 rounded-lg p-2">
+                        <div className="bg-muted/30 rounded p-2">
                           <EarningsSurprise stock={stock} />
                         </div>
                       </div>
@@ -246,11 +246,11 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </TabsContent>
 
             <TabsContent value="sentiment" className="mt-0">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Analyst Ratings Donut */}
                 <div>
                   <h3 className="text-sm font-semibold mb-3">Analyst Ratings</h3>
-                  <div className="bg-muted/30 rounded-lg p-2">
+                  <div className="bg-muted/30 rounded p-2">
                     <AnalystDonut stock={stock} />
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
                 {/* Price Target Range */}
                 <div>
                   <h3 className="text-sm font-semibold mb-3">Price Targets</h3>
-                  <div className="bg-muted/30 rounded-lg p-3">
+                  <div className="bg-muted/30 rounded p-3">
                     <PriceTargetRange stock={stock} />
                   </div>
                 </div>
@@ -287,11 +287,11 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
             </TabsContent>
 
             <TabsContent value="valuation" className="mt-0">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {/* Valuation Bars Chart */}
                 <div>
                   <h3 className="text-sm font-semibold mb-3">Valuation vs Benchmarks</h3>
-                  <div className="bg-muted/30 rounded-lg p-2">
+                  <div className="bg-muted/30 rounded p-2">
                     <ValuationBars stock={stock} />
                   </div>
                 </div>
@@ -299,10 +299,10 @@ export function StockDetail({ stock, onClose }: StockDetailProps) {
                 {/* Relative Valuation Assessment */}
                 <div>
                   <h3 className="text-sm font-semibold mb-3">Assessment</h3>
-                  <div className="p-4 bg-muted/30 rounded-lg">
+                  <div className="p-3 bg-muted/30 rounded">
                     <p className="text-sm font-medium mb-2">{stock.valuation_metrics.valuation_vs_sector}</p>
                     <p className="text-sm">
-                      <span className={stock.valuation_metrics.growth_justifies_premium ? "text-emerald-600" : "text-red-500"}>
+                      <span className={stock.valuation_metrics.growth_justifies_premium ? "text-emerald-500" : "text-red-500"}>
                         {stock.valuation_metrics.growth_justifies_premium ? "✓ Growth justifies premium" : "⚠ Growth may not justify premium"}
                       </span>
                     </p>
@@ -347,7 +347,7 @@ function MetricRow({ label, value, positive, className }: { label: string; value
   return (
     <div className={className}>
       <p className="text-xs text-muted-foreground">{label}</p>
-      <p className={`text-sm font-semibold ${positive ? "text-emerald-600 dark:text-emerald-400" : "text-foreground"}`}>{value}</p>
+      <p className={`text-sm font-semibold font-mono-num ${positive ? "text-emerald-500 dark:text-emerald-400" : "text-foreground"}`}>{value}</p>
     </div>
   );
 }
