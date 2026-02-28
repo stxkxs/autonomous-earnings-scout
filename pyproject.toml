@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "autonomous-earnings-scout"
 version = "0.1.0"
@@ -21,6 +25,9 @@ dev = [
 
 [project.scripts]
 earnings-scout = "src.main:main"
+
+[tool.setuptools]
+packages = ["src"]
 
 [tool.ruff]
 line-length = 100
